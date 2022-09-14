@@ -1,0 +1,21 @@
+.list-group { 
+    .list-group-item.active {
+        font-weight: 600;
+        background: rgba(var(--color-primary-rgb), 0.9) !important;
+        color: var(--color-primary-contrast);
+        
+        .bx, span {
+            color: var(--color-primary-contrast);
+        }
+    }
+    
+    .list-group-item {
+        padding: 6px 8px;
+        background: var(--color-light);
+        color: var(--color-dark);
+
+        &:hover {
+            background: rgba(var(--color-medium-rgb), 0.2);
+        }
+    }
+}

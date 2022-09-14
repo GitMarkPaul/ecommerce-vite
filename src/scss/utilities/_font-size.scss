@@ -1,0 +1,44 @@
+@use 'sass:math';
+
+$utilities: (
+    "font-size": (
+        "prefix": "font-size",
+        "values": (
+            "10": 10px,
+            "12": 12px,
+            "13": 13px,
+            "14": 14px,
+            "15": 15px,
+            "16": 16px,
+            "18": 18px,
+            "20": 20px,
+            "24": 24px,
+            "26": 26px,
+            "30": 30px,
+            "32": 32px,
+            "40": 40px,
+            "48": 48px,
+            "56": 56px,
+            "64": 64px,
+            "72": 72px,
+        ),
+    ),
+);
+
+// Generate Utility Classes
+@each $property, $map in $utilities {
+    $prefix: map-get($map,  "prefix");
+    $values: map-get($map,  "values");
+
+    @each $k, $v in  $values {
+        @if ($k == "default") {
+            .#{$prefix} {
+                #{$property}: $v !important;
+            }
+        } @else {
+            .#{$prefix}-#{$k} {
+                #{$property}: $v !important;
+            }
+        }
+    }
+}

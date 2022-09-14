@@ -1,0 +1,30 @@
+@use 'sass:math';
+
+$text-aligns: (
+    "text-align": (
+        "prefix": "text-align",
+        "values": (
+            "center": center,
+            "left": left,
+            "right": right,
+        ),
+    ),
+);
+
+// Generate Utility Classes
+@each $property, $map in $text-aligns {
+    $prefix: map-get($map,  "prefix");
+    $values: map-get($map,  "values");
+
+    @each $k, $v in  $values {
+        @if ($k == "default") {
+            .#{$prefix} {
+                #{$property}: $v;
+            }
+        } @else {
+            .#{$prefix}-#{$k} {
+                #{$property}: $v;
+            }
+        }
+    }
+}

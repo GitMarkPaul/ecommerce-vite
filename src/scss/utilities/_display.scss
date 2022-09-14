@@ -1,0 +1,42 @@
+@use 'sass:math';
+
+$utilities: (
+    "display": (
+        "prefix": "display",
+        "values": (
+            "none": none,
+            "block": block,
+            "flex": flex,
+            "grid": grid,
+            "inline": inline,
+            "inline-block": inline-block,
+            "inline-flex": inline-flex,
+            "inline-grid": inline-grid,
+        ),
+    ),
+    "flex": (
+        "prefix": "flex-wrap",
+        "values": (
+            "wrap": wrap,
+            "nowrap": nowrap,
+        ),
+    ),
+);
+
+// Generate Utility Classes
+@each $property, $map in $utilities {
+    $prefix: map-get($map,  "prefix");
+    $values: map-get($map,  "values");
+
+    @each $k, $v in  $values {
+        @if ($k == "default") {
+            .#{$prefix} {
+                #{$property}: $v;
+            }
+        } @else {
+            .#{$prefix}-#{$k} {
+                #{$property}: $v;
+            }
+        }
+    }
+}

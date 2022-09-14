@@ -1,0 +1,24 @@
+.modal {
+    .modal-dialog {
+        .modal-header {
+            border-bottom: 1px solid rgba(var(--color-medium-rgb), 0.4);
+        }
+        .modal-content {
+            background: var(--color-light);
+            border-radius: 20px;
+        }
+        .modal-footer {
+            border-top: 1px solid rgba(var(--color-medium-rgb), 0.4);
+        }
+    }
+}
+
+.offcanvas {
+    .offcanvas-header {
+        background: var(--color-light);
+    }
+
+    .offcanvas-body {
+        background: var(--color-light);
+    }
+}

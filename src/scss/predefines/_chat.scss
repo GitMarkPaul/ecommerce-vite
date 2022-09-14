@@ -1,0 +1,274 @@
+// Chat Variables
+$border-color: 1px solid rgba(var(--color-dark-rgb), 0.1);
+
+// Extenders
+%convoWrapperStyles {
+    display: grid;
+    grid-gap: 0.2rem;
+}
+
+%convoStyles {
+    padding: 7px 14px;
+    border-radius: 22px;
+    width: fit-content;
+}
+
+%placeholderStyles {
+    max-width: 75%;
+    height: 2.5rem
+}
+
+.new-message-indicator {
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--color-primary);
+}
+
+.toggleMedia {
+    grid-template-columns: .1fr 1fr 2.7fr !important;
+    transition: all 0.5s ease;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 1.8fr 0.9fr; 
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "aside leftbar content rightbar"
+        "aside leftbar content rightbar"
+        "aside leftbar content rightbar"; 
+    height: 100vh;
+    max-width: 1920px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background: var(--color-light);
+
+    @media (max-width: 1024px) and (min-width: 600px) {
+        grid-template-columns: 0.1fr 1.1fr 1.7fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        grid-template-areas: 
+            "aside leftbar content"
+            "aside leftbar content"
+            "aside leftbar content";
+    }
+
+    @media (max-width: 600px) {
+        grid-template-columns: 0.1fr 1.1fr 1.7fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        grid-template-areas: 
+            "aside leftbar leftbar"
+            "aside leftbar leftbar"
+            "aside leftbar leftbar"; 
+    }
+}
+
+.aside {
+    grid-area: aside;
+    background: rgba(var(--color-light-rgb), 0.9);
+    backdrop-filter: blur(5px);
+    padding: 12px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    place-content: flex-start;
+    border-right: $border-color;
+    z-index: 1;
+
+    // @media (max-width: 400px) {
+    //     display: flex;
+    //     position: fixed;
+    //     bottom: 0;
+    //     left: 0;
+    //     right: 0;
+    //     justify-content: center;
+    //     padding: 14px;
+    //     height: 60px;
+    //     border-top: $border-color;
+    //     z-index: 2;
+
+    //     .tab-bar-menu {
+    //         display: flex;
+    //         margin-top: 0;
+    //         justify-content: space-between;
+    //     }
+
+    //     .school-logo, .astra-logo {
+    //         display: none;
+    //     }
+    // }
+}
+
+.leftbar {
+    grid-area: leftbar;
+    overflow: hidden;
+    display: grid; 
+    grid-template-columns: 0.8fr 1.3fr 0.8fr; 
+    grid-template-rows: 0.3fr 2.5fr 0.2fr; 
+    grid-template-areas: 
+        "upper-state upper-state upper-state"
+        "content-state content-state content-state"
+        "content-state content-state content-state";
+
+    .upper-state {
+        grid-area: upper-state;
+    }
+
+    .content-state {
+        grid-area: content-state;
+        overflow: auto;
+
+        .list-group-item {
+            border: none;
+        }
+    }
+}
+
+.content {
+    grid-area: content;
+    overflow: hidden;
+    border-left: $border-color;
+    border-right: $border-color;
+    display: grid; 
+    grid-template-columns: 0.8fr 1.3fr 0.8fr; 
+    grid-template-rows: 0.2fr 2.6fr 0.2fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        "top-wrapper top-wrapper top-wrapper"
+        "conversation-wrapper conversation-wrapper conversation-wrapper"
+        "bottom-wrapper bottom-wrapper bottom-wrapper";
+
+    @media (max-width: 600px) {
+        display: none;
+    }
+
+    .top-wrapper {
+        grid-area: top-wrapper;
+        border-bottom: $border-color;
+        height: 70px;
+    }
+
+    .bottom-wrapper {
+        grid-area: bottom-wrapper;
+        border-top: $border-color;
+        height: 70px;
+    }
+
+    .conversation-wrapper {
+        grid-area: conversation-wrapper;
+        overflow: auto;
+
+        .sender-wrapper {
+            @extend %convoWrapperStyles;
+            place-items: start;
+            width: 100%;
+
+            .sender {
+                background: rgba(var(--color-primary-rgb), 0.1);
+                max-width: 75%;
+                @extend %convoStyles;
+            }
+
+            .placeholder {
+                @extend %placeholderStyles;
+            }
+        }
+        
+        .receiver-wrapper {
+            @extend %convoWrapperStyles;
+            place-items: end;
+            width: 100%;
+
+            .receiver {
+                background: var(--color-primary);
+                color: var(--color-primary-contrast);
+                max-width: 75%;
+                @extend %convoStyles;
+            }
+
+            .placeholder {
+                @extend %placeholderStyles;
+            }
+        }
+
+        .empty-state-wrapper {
+            display: grid;
+            place-items: center;
+            align-content: center;
+            text-align: center;
+            height: 100%;
+
+            .empty-state-icon {
+                width: 150px;
+                height: 150px;
+                background-color: rgba(var(--color-medium-rgb), 0.3);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 1rem;
+
+                i {
+                    font-size: 72px;
+                    color: rgba(var(--color-dark-rgb), 0.6);
+                }
+            }
+        }
+    }
+}
+
+.rightbar {
+    grid-area: rightbar;
+    display: grid; 
+    grid-template-columns: 0.8fr 1.3fr 0.8fr; 
+    grid-template-rows: 0.3fr 2.5fr 0.2fr; 
+    grid-template-areas: 
+        "upper-state upper-state upper-state"
+        "content-state content-state content-state"
+        "content-state content-state content-state";
+
+    .upper-state {
+        grid-area: upper-state;
+        height: 70px;
+    }
+
+    .content-state {
+        grid-area: content-state;
+        overflow: auto;
+    }
+
+    @media (max-width: 1024px) and (min-width: 600px) {
+        display: none;
+    }
+
+    @media (max-width: 600px) {
+        display: none;
+    }
+}
+
+.message-wrapper {
+    width: 100%;
+    border-radius: 24px;
+    background-color: rgba(var(--color-medium-rgb), 0.4);
+    padding: 8px 18px; /* the container will keep the padding untouched */
+    max-height: 145px; /* added padding to the height of the .message-text */
+    
+    .message-text {
+        min-height: 1em; /* prevent height collapsing when there is no text */
+        max-height: 97px;
+        width: 100%;
+        outline: none;
+        overflow: auto;
+        
+    }
+
+    [contentEditable][aria-placeholder]:empty::before {
+        content: attr(aria-placeholder);
+        color: rgba(var(--color-dark-rgb), 0.7);
+        pointer-events: none;
+    }
+}

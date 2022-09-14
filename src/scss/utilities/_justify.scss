@@ -1,0 +1,39 @@
+@use 'sass:math';
+
+$utilities: (
+    "justify-items": (
+        "prefix": "justify-items",
+        "values": (
+            "center": center,
+            "start": start,
+            "end": end,
+        ),
+    ),
+    "justify-content": (
+        "prefix": "justify-content",
+        "values": (
+            "center": center,
+            "between": space-between,
+            "start": start,
+            "end": end,
+        ),
+    ),
+);
+
+// Generate Utility Classes
+@each $property, $map in $utilities {
+    $prefix: map-get($map,  "prefix");
+    $values: map-get($map,  "values");
+
+    @each $k, $v in  $values {
+        @if ($k == "default") {
+            .#{$prefix} {
+                #{$property}: $v;
+            }
+        } @else {
+            .#{$prefix}-#{$k} {
+                #{$property}: $v;
+            }
+        }
+    }
+}

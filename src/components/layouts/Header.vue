@@ -4,7 +4,7 @@
 			<nav>
 				<div class="d-flex align-items-center gap-2">
 					<router-link to="/">
-						<img class="brand-logo" src="../../../auda.svg" alt="" />
+						<img class="brand-logo" src="../../assets/auda.svg" alt="" />
 					</router-link>
 					<div class="form-icon-group margin-left-1 search-form" data-bs-toggle="modal" data-bs-target="#searchForm">
 						<span class="material-icons-outlined icon-search">search</span>

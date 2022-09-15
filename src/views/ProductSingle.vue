@@ -97,7 +97,7 @@
             <div class="d-flex align-items-center justify-content-between">
                 <div class="font-size-26 font-weight-600">Product from the same category</div>
             </div>
-            <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-3 row-cols-2 g-3 mt-2">
+            <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-3 row-cols-1 g-3 mt-2">
                 <div class="col" v-for="product in products" :key="product.id">
                     <div class="card round hover-scale-1">
                         <router-link :to="{ name: 'ProductSingle', params: { category: product.category, id: product.id } }">

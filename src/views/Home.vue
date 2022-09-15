@@ -198,7 +198,7 @@
                 <div class="font-size-24 font-weight-600">Best Selling Products</div>
                 <router-link to="/" class="button-outline-primary round">See more <span class="material-icons-outlined">east</span></router-link>
             </div>
-            <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-3 row-cols-2 g-3 mt-2">
+            <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-3 row-cols-1 g-3 mt-2">
                 <div class="col" v-for="product in products.slice(0,5)" :key="product.id">
                     <div class="card round hover-scale-1">
                         <router-link :to="{ name: 'ProductSingle', params: { category: product.category, id: product.id } }">
@@ -223,7 +223,7 @@
                 <div class="font-size-24 font-weight-600">Products for you</div>
                 <router-link to="/products" class="button-outline-primary round">See more <span class="material-icons-outlined">east</span></router-link>
             </div>
-            <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-3 row-cols-2 g-3 mt-2">
+            <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-3 row-cols-1 g-3 mt-2">
                 <div class="col" v-for="product in products.slice(5,15)" :key="product.id">
                     <div class="card round hover-scale-1">
                         <router-link :to="{ name: 'ProductSingle', params: { category: product.category, id: product.id } }">

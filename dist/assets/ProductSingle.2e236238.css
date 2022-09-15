@@ -1,1 +1,0 @@
-.thumbnail{display:flex;overflow:auto;scroll-snap-type:mandatory;gap:12px;scroll-padding:24px}.thumbnail .item{flex:0 0 100%;scroll-snap-align:start}.thumbnail .item .product-image{width:100%;height:350px;object-fit:cover}

@@ -29,14 +29,27 @@ const routes = [
         path: '/shopping-cart',
         name: 'Cart',
         component: loadComponent('Cart'),
+    },
+    {
+        path: '/wishlist',
+        name: 'Wishlist',
+        component: loadComponent('Wishlist'),
+    },
+    {
+        path: '/categories',
+        name: 'Categories',
+        component: loadComponent('Categories'),
     }
 ]
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     scrollBehavior(to, from, savedPosition) {
-        // always scroll to top
-        return { top: 0 }
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve({ x: 0, y: 0 })
+            }, 500) 
+        })
     },
     routes
 })

@@ -5,7 +5,8 @@
 	import Footer from './components/layouts/Footer.vue'
 	import Main from './components/Main.vue'
 	import Interest from './components/partials/offcanvas/Interest.vue'
-import Search from './components/partials/modals/Search.vue'
+	import Search from './components/partials/modals/Search.vue'
+	import Delete from './components/partials/modals/Delete.vue'
 </script>
 
 <template>
@@ -19,6 +20,8 @@ import Search from './components/partials/modals/Search.vue'
 	<Interest></Interest>
 
 	<Search></Search>
+
+	<Delete></Delete>
 	
 </template>
 

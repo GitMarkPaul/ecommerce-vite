@@ -15,9 +15,9 @@
 
 <template>
     <div class="col" v-for="product in products" :key="product.id">
-        <div class="card round hover-scale-1">
+        <div class="card round hover-scale-1 h-100">
             <router-link :to="{ name: 'ProductSingle', params: { category: product.category, id: product.id } }">
-                <img class="card-product-img" :src="product.image" alt="" />
+                <img class="card-product-img" loading="lazy" :src="product.image" alt="" />
             </router-link>
             <a href="#" class="button-outline-danger circle position-absolute top-0 right-0 my-2 mx-2"><span class="material-icons-outlined">favorite_border</span></a>
             <div class="body">
@@ -29,7 +29,7 @@
                     <span class="material-icons-outlined">star</span>
                     <span class="material-icons-outlined">star</span>
                     <span class="material-icons-outlined">star_border</span>
-                    <div class="font-size-12 font-weight-500">3.5k Reviews</div>
+                    <div class="font-size-12 font-weight-500">{{ product.rating.count }} Reviews</div>
                 </div>
             </div>
         </div>

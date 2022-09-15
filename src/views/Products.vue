@@ -5,13 +5,23 @@
 </script>
 
 <template>
-    <section class="padding-top-4 padding-bottom-5">
+    <section class="padding-top-1 padding-bottom-5">
         <div class="container-fluid">
+            <div class="bread">
+                <ol class="bread-menu">
+                    <li class="bread-item">
+                        <router-link to="/" class="bread-link">Home</router-link>
+                    </li>
+                    <li class="bread-item">
+                        <div class="bread-link" aria-current="page">Products</div>
+                    </li>
+                </ol>
+            </div>
             <div class="d-flex align-items-center justify-content-between">
                 <div class="font-size-26 font-weight-600">Discover more products</div>
             </div>
             <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-3 row-cols-1 g-3 mt-2">
-                <Suspense timeout="0">
+                <Suspense>
                     <template #default>
                         <ProductList></ProductList>
                     </template>

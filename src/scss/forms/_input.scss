@@ -5,7 +5,7 @@
     padding: 12px 14px;
     font-family: var(--font-serif);
     font-size: 14px;
-    background: rgba(var(--color-secondary-rgb), 0.8) !important;
+    background: rgba(var(--color-secondary-rgb), 0.3) !important;
     background-clip: padding-box;
     border: 2px solid rgba(var(--color-medium-rgb), 0.3);
     border-radius: 8px;
@@ -135,7 +135,7 @@ label, .form-label {
     }
 
     .form-control {
-        padding: 12px 40px;
+        padding: 8px 40px;
     }
 }
 

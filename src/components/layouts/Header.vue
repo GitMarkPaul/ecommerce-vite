@@ -3,10 +3,9 @@
 		<div class="container-fluid">
 			<nav>
 				<div class="d-flex align-items-center gap-2">
-					<router-link to="/" class="button-link-dark circle md">
-						<img class="brand-logo" src="../../assets/logo.png" alt="" />
+					<router-link to="/">
+						<img class="brand-logo" src="../../../auda.svg" alt="" />
 					</router-link>
-					<div class="font-size-24 font-weight-600">Astra</div>
 					<div class="form-icon-group margin-left-1 search-form" data-bs-toggle="modal" data-bs-target="#searchForm">
 						<span class="material-icons-outlined icon-search">search</span>
 						<input type="text" class="form-control round" placeholder="Search ...">
@@ -20,10 +19,10 @@
 						</router-link>
 					</li>
 					<li class="nav-item">
-						<a href="#" class="nav-link button-accent-dark circle" data-badge="1">
+						<router-link to="/wishlist" class="nav-link button-accent-dark circle" data-badge="1">
 							<span class="material-icons-outlined">favorite_border</span>
 							<div class="nav-text">Wishlist</div>
-						</a>
+						</router-link>
 					</li>
 					<li class="nav-item">
 						<a href="#" class="nav-link button-accent-dark circle" data-badge="9+">

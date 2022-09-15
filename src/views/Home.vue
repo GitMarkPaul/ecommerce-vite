@@ -1,5 +1,6 @@
 <script setup>
     import { onMounted, ref } from 'vue';
+    import StarRating from '../components/StarRating.vue';
     
     const products = ref([]);
     
@@ -36,11 +37,11 @@
         </div>
     </section>
 
-    <section class="padding-top-4">
+    <section class="padding-top-2">
         <div class="container-fluid">
             <div class="d-flex align-items-center justify-content-between">
                 <div class="font-size-24 font-weight-600">Categories</div>
-                <a href="#" class="button-outline-primary round">See more <span class="material-icons-outlined">east</span></a>
+                <router-link to="/categories" class="button-outline-primary round">See more <span class="material-icons-outlined">east</span></router-link>
             </div>
 
             <div class="row row-cols-xl-6 row-cols-lg-5 row-cols-md-4 row-cols-sm-4 row-cols-2 g-3 mt-2">
@@ -194,19 +195,44 @@
 
     <section class="padding-top-4">
         <div class="container-fluid">
+            <div class="row g-4">
+                <div class="col-xl-12">
+                    <div class="background-accent-danger round p-3">
+                        <div class="font-size-24 font-weight-600 d-flex align-items-center"><span class="material-icons-outlined text-color-danger font-size-40">bolt</span> Flash Deals</div>
+                        <div class="row row-cols-xl-6 row-cols-lg-5 row-cols-md-4 row-cols-sm-3 row-cols-2 g-2 mt-2">
+                            <div class="col" v-for="product in products.slice(10,16)" :key="product.id">
+                                <div class="card round hover-scale-1 h-100">
+                                    <router-link :to="{ name: 'ProductSingle', params: { category: product.category, id: product.id } }">
+                                        <img class="card-product-img" loading="lazy" :src="product.image" alt="" />
+                                    </router-link>
+                                    <div class="body">
+                                        <div class="font-size-18 font-weight-600 text-color-danger text-center mb-3">&#8369;{{ product.price }}</div>
+                                        <a href="#" class="button-warning round block">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="padding-top-4">
+        <div class="container-fluid">
             <div class="d-flex align-items-center justify-content-between">
                 <div class="font-size-24 font-weight-600">Best Selling Products</div>
                 <router-link to="/" class="button-outline-primary round">See more <span class="material-icons-outlined">east</span></router-link>
             </div>
             <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-3 row-cols-1 g-3 mt-2">
                 <div class="col" v-for="product in products.slice(0,5)" :key="product.id">
-                    <div class="card round hover-scale-1">
+                    <div class="card round hover-scale-1 h-100">
                         <router-link :to="{ name: 'ProductSingle', params: { category: product.category, id: product.id } }">
-                            <img class="card-product-img" :src="product.image" alt="" />
+                            <img class="card-product-img" loading="lazy" :src="product.image" alt="" />
                         </router-link>
                         <a href="#" class="button-outline-danger circle position-absolute top-0 right-0 my-2 mx-2"><span class="material-icons-outlined">favorite_border</span></a>
                         <div class="body d-grid">
-                            <div class="badge round background-accent-tertiary">{{ product.category }}</div>
+                            <div class="badge round background-accent-tertiary sm">{{ product.category }}</div>
                             <router-link :to="{ name: 'ProductSingle', params: { category: product.category, id: product.id } }" class="font-size-16 font-weight-500 mt-2">{{ product.title }}</router-link>
                             <div class="font-size-18 font-weight-600 text-color-danger mt-2 mb-4">&#8369;{{ product.price }}</div>
                             <a href="#" class="button-outline-primary round block"><span class="material-icons-outlined">add_shopping_cart</span> Add to Cart</a>
@@ -225,21 +251,17 @@
             </div>
             <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-3 row-cols-1 g-3 mt-2">
                 <div class="col" v-for="product in products.slice(5,15)" :key="product.id">
-                    <div class="card round hover-scale-1">
+                    <div class="card round hover-scale-1 h-100">
                         <router-link :to="{ name: 'ProductSingle', params: { category: product.category, id: product.id } }">
-                            <img class="card-product-img" :src="product.image" alt="" />
+                            <img class="card-product-img" loading="lazy" :src="product.image" alt="" />
                         </router-link>
                         <a href="#" class="button-outline-danger circle position-absolute top-0 right-0 my-2 mx-2"><span class="material-icons-outlined">favorite_border</span></a>
                         <div class="body">
                             <router-link :to="{ name: 'ProductSingle', params: { category: product.category, id: product.id } }" class="font-size-16 font-weight-500">{{ product.title }}</router-link>
                             <div class="font-size-18 font-weight-600 text-color-danger mt-2 mb-4">&#8369;{{ product.price }}</div>
                             <div class="star-rating">
-                                <span class="material-icons-outlined">star</span>
-                                <span class="material-icons-outlined">star</span>
-                                <span class="material-icons-outlined">star</span>
-                                <span class="material-icons-outlined">star</span>
-                                <span class="material-icons-outlined">star_border</span>
-                                <div class="font-size-12 font-weight-500">3.5k Reviews</div>
+                                <star-rating :ratings="product.rating.rate"></star-rating>
+                                <div class="font-size-12 font-weight-500">{{ product.rating.count }} Reviews</div>
                             </div>
                         </div>
                     </div>

@@ -6,8 +6,8 @@ $default-transition: all 0.2s ease !default;
     header { 
         border-bottom: $default-border;
         background: rgba(var(--color-light-rgb), 0.9);
-        backdrop-filter: blur(6px);
-        position: sticky;
+        backdrop-filter: blur(8px);
+        position: fixed;
         top: 0; 
         padding: 0 12px;
         display: flex;
@@ -15,12 +15,17 @@ $default-transition: all 0.2s ease !default;
         justify-content: flex-end;
         transition: $default-transition;
         height: 75px;
+        width: 100%;
         z-index: 3;
         
         nav {
             display: grid;
             grid-template-columns: 1fr auto auto;
             width: 100%;
+
+            .brand-logo {
+                width: 170px;
+            }
 
             .nav-btn-toggler {
                 z-index: 1;
@@ -80,6 +85,7 @@ $default-transition: all 0.2s ease !default;
     main { 
         transition: $default-transition;
         height: 100%;
+        margin-top: 5rem;
 
         .container {
             @media (max-width: 1024px) and (min-width: 768px) {

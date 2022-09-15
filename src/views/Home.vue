@@ -1,20 +1,16 @@
-<script>
-    import axios from 'axios'
-
-    export default {
-        data() {
-            return {
-                products: []
-            }
-        },
-
-        mounted() {
-            axios.get('https://api.escuelajs.co/api/v1/products')
-            .then((response) => {
-                this.products = response.data
-            })
+<script setup>
+    import { onMounted, ref } from 'vue';
+    
+    const products = ref([]);
+    
+    onMounted(async () => {
+        try {
+            const response = await fetch('https://fakestoreapi.com/products');
+            products.value = await response.json();
+        } catch (err) {
+            // Handle error
         }
-    }
+    })
 </script>
 
 <template>
@@ -203,15 +199,15 @@
                 <router-link to="/" class="button-outline-primary round">See more <span class="material-icons-outlined">east</span></router-link>
             </div>
             <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-3 row-cols-2 g-3 mt-2">
-                <div class="col" v-for="product in products.slice(21,31)" :key="product.id">
+                <div class="col" v-for="product in products.slice(0,5)" :key="product.id">
                     <div class="card round hover-scale-1">
-                        <router-link :to="{ name: 'ProductSingle', params: { id: product.id } }">
-                            <img class="card-product-img" :src="product.images[2]" alt="" />
+                        <router-link :to="{ name: 'ProductSingle', params: { category: product.category, id: product.id } }">
+                            <img class="card-product-img" :src="product.image" alt="" />
                         </router-link>
                         <a href="#" class="button-outline-danger circle position-absolute top-0 right-0 my-2 mx-2"><span class="material-icons-outlined">favorite_border</span></a>
                         <div class="body d-grid">
-                            <div class="badge round background-accent-tertiary">{{ product.category.name }}</div>
-                            <router-link :to="{ name: 'ProductSingle', params: { id: product.id } }" class="font-size-16 font-weight-500 mt-2">{{ product.title }}</router-link>
+                            <div class="badge round background-accent-tertiary">{{ product.category }}</div>
+                            <router-link :to="{ name: 'ProductSingle', params: { category: product.category, id: product.id } }" class="font-size-16 font-weight-500 mt-2">{{ product.title }}</router-link>
                             <div class="font-size-18 font-weight-600 text-color-danger mt-2 mb-4">&#8369;{{ product.price }}</div>
                             <a href="#" class="button-outline-primary round block"><span class="material-icons-outlined">add_shopping_cart</span> Add to Cart</a>
                         </div>
@@ -228,14 +224,14 @@
                 <router-link to="/products" class="button-outline-primary round">See more <span class="material-icons-outlined">east</span></router-link>
             </div>
             <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-3 row-cols-2 g-3 mt-2">
-                <div class="col" v-for="product in products.slice(0,20)" :key="product.id">
+                <div class="col" v-for="product in products.slice(5,15)" :key="product.id">
                     <div class="card round hover-scale-1">
-                        <router-link :to="{ name: 'ProductSingle', params: { id: product.id } }">
-                            <img class="card-product-img" :src="product.images[1]" alt="" />
+                        <router-link :to="{ name: 'ProductSingle', params: { category: product.category, id: product.id } }">
+                            <img class="card-product-img" :src="product.image" alt="" />
                         </router-link>
                         <a href="#" class="button-outline-danger circle position-absolute top-0 right-0 my-2 mx-2"><span class="material-icons-outlined">favorite_border</span></a>
                         <div class="body">
-                            <router-link :to="{ name: 'ProductSingle', params: { id: product.id } }" class="font-size-16 font-weight-500">{{ product.title }}</router-link>
+                            <router-link :to="{ name: 'ProductSingle', params: { category: product.category, id: product.id } }" class="font-size-16 font-weight-500">{{ product.title }}</router-link>
                             <div class="font-size-18 font-weight-600 text-color-danger mt-2 mb-4">&#8369;{{ product.price }}</div>
                             <div class="star-rating">
                                 <span class="material-icons-outlined">star</span>

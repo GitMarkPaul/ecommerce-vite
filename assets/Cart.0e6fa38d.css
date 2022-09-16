@@ -1,0 +1,1 @@
+.quantifier{display:flex;align-items:center;gap:.3rem;width:45%}.cart-img{width:130px;height:130px;object-fit:cover}@media (max-width: 564px){.cart-img{width:60px;height:60px}}.cart-items{display:flex;gap:2rem}.cart-items .cart-details{width:100%}.quantity{width:50%}

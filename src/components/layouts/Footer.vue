@@ -1,11 +1,11 @@
 <template>
     <footer class="background-overlay">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row row-cols-xl-4 row-cols-md-4 row-cols-sm-2 row-cols-1 g-5 position-relative">
 				<div class="col">
 					<div class="font-size-16 font-weight-600">Customer Service</div>
 					<ul class="footer-menu">
-						<li><a href="" class="footer-link">Help Center</a></li>
+						<li><router-link to="/help-center" class="footer-link">Help Center</router-link></li>
 						<li><a href="" class="footer-link">Order Tracking</a></li>
 						<li><a href="" class="footer-link">Free Shipping</a></li>
 						<li><a href="" class="footer-link">Return & Refund</a></li>

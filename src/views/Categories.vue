@@ -1,6 +1,6 @@
 <template>
-    <section class="padding-top-1 padding-bottom-5">
-        <div class="container-fluid">
+    <section class="pt-2 padding-bottom-3">
+        <div class="container">
             <div class="bread">
                 <ol class="bread-menu">
                     <li class="bread-item">
@@ -17,7 +17,7 @@
 
             <div class="row row-cols-xl-6 row-cols-lg-5 row-cols-md-4 row-cols-sm-4 row-cols-2 g-3 mt-2">
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -29,7 +29,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -41,7 +41,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -53,7 +53,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -65,7 +65,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -77,7 +77,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -89,7 +89,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -101,7 +101,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -113,7 +113,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -125,7 +125,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -137,7 +137,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -149,7 +149,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -161,7 +161,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -173,7 +173,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -185,7 +185,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -197,7 +197,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -209,7 +209,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -221,7 +221,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -233,7 +233,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -245,7 +245,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -257,7 +257,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -269,7 +269,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -281,7 +281,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -293,7 +293,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">

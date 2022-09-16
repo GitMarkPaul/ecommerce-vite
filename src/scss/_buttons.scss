@@ -61,7 +61,7 @@ $mp-theme-colors: (
             background: rgba(var(--color-#{$color}-rgb), 0.15);
         }
 
-        i {
+        i, span {
             font-size: 21px;
             color: var(--color-#{$color});
         }

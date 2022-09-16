@@ -16,14 +16,14 @@
 
 <template>
     <section class="padding-top-2">
-        <div class="container-fluid">
+        <div class="container">
             <div class="background-accent-warning p-xl-5 p-4 round">
                 <div class="row align-items-center justify-content-center g-5">
                     <div class="col-xl-7 col-lg-6 col-md-6">
                         <h1 class="font-weight-800 font-size-44">The Masterpieces of Pacificas Wood Furniture</h1>
                         <p class="font-size-20">Enhance your home and property with beautifully rendered furniture pieces that can last a lifetime.</p>
                         <div class="d-flex gap-3 pt-4">
-                            <a href="#contact" class="button-warning round lg">Buy Now <span class="material-icons-outlined">east</span></a>
+                            <a href="#contact" class="button-dark round lg">Buy Now <span class="material-icons-outlined">east</span></a>
                             <div class="button-light round lg">&#8369;2,999 only</div>
                         </div>
                     </div>
@@ -38,15 +38,15 @@
     </section>
 
     <section class="padding-top-2">
-        <div class="container-fluid">
+        <div class="container">
             <div class="d-flex align-items-center justify-content-between">
-                <div class="font-size-24 font-weight-600">Categories</div>
-                <router-link to="/categories" class="button-outline-primary round">See more <span class="material-icons-outlined">east</span></router-link>
+                <div class="font-size-24 font-weight-600">Shop by Category</div>
+                <router-link to="/categories" class="button-outline-dark round">See more <span class="material-icons-outlined">east</span></router-link>
             </div>
 
             <div class="row row-cols-xl-6 row-cols-lg-5 row-cols-md-4 row-cols-sm-4 row-cols-2 g-3 mt-2">
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -58,7 +58,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -70,7 +70,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -82,7 +82,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -94,7 +94,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -106,7 +106,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -118,7 +118,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -130,7 +130,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -142,7 +142,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -154,7 +154,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -166,7 +166,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -178,7 +178,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="">
+                    <a href="/ecommerce-vite/category-single">
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
@@ -194,7 +194,7 @@
     </section>
 
     <section class="padding-top-4">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row g-4">
                 <div class="col-xl-12">
                     <div class="background-accent-danger round p-3">
@@ -206,7 +206,7 @@
                                         <img class="card-product-img" loading="lazy" :src="product.image" alt="" />
                                     </router-link>
                                     <div class="body">
-                                        <div class="font-size-18 font-weight-600 text-color-danger text-center mb-3">&#8369;{{ product.price }}</div>
+                                        <div class="font-size-16 font-weight-600 text-color-danger text-center mb-2">&#8369;{{ product.price }}</div>
                                         <a href="#" class="button-warning round block">Buy Now</a>
                                     </div>
                                 </div>
@@ -219,23 +219,25 @@
     </section>
 
     <section class="padding-top-4">
-        <div class="container-fluid">
-            <div class="d-flex align-items-center justify-content-between">
-                <div class="font-size-24 font-weight-600">Best Selling Products</div>
-                <router-link to="/" class="button-outline-primary round">See more <span class="material-icons-outlined">east</span></router-link>
-            </div>
-            <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-3 row-cols-1 g-3 mt-2">
-                <div class="col" v-for="product in products.slice(0,5)" :key="product.id">
-                    <div class="card round hover-scale-1 h-100">
-                        <router-link :to="{ name: 'ProductSingle', params: { category: product.category, id: product.id } }">
-                            <img class="card-product-img" loading="lazy" :src="product.image" alt="" />
-                        </router-link>
-                        <a href="#" class="button-outline-danger circle position-absolute top-0 right-0 my-2 mx-2"><span class="material-icons-outlined">favorite_border</span></a>
-                        <div class="body d-grid">
-                            <div class="badge round background-accent-tertiary sm">{{ product.category }}</div>
-                            <router-link :to="{ name: 'ProductSingle', params: { category: product.category, id: product.id } }" class="font-size-16 font-weight-500 mt-2">{{ product.title }}</router-link>
-                            <div class="font-size-18 font-weight-600 text-color-danger mt-2 mb-4">&#8369;{{ product.price }}</div>
-                            <a href="#" class="button-outline-primary round block"><span class="material-icons-outlined">add_shopping_cart</span> Add to Cart</a>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-xl-12">
+                    <div class="background-accent-primary round p-3">
+                        <div class="font-size-24 font-weight-600 d-flex align-items-center">New Arrivals</div>
+                        <div class="row row-cols-xl-5 row-cols-lg-5 row-cols-md-4 row-cols-sm-3 row-cols-2 g-2 mt-2">
+                            <div class="col" v-for="product in products.slice(5,10)" :key="product.id">
+                                <div class="card round hover-scale-1 h-100">
+                                    <router-link :to="{ name: 'ProductSingle', params: { category: product.category, id: product.id } }">
+                                        <img class="card-product-img" loading="lazy" :src="product.image" alt="" />
+                                    </router-link>
+                                    <div class="body d-grid">
+                                        <div class="badge round background-accent-tertiary sm">{{ product.category }}</div>
+                                        <router-link :to="{ name: 'ProductSingle', params: { category: product.category, id: product.id } }" class="font-size-14 font-weight-500 mt-2 text-truncate-2">{{ product.title }}</router-link>
+                                        <div class="font-size-16 font-weight-600 text-color-danger mt-2 mb-2">&#8369;{{ product.price }}</div>
+                                        <a href="#" class="button-accent-primary round block"><span class="material-icons-outlined">add_shopping_cart</span> Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -243,25 +245,50 @@
         </div>
     </section>
 
-    <section class="padding-top-4 padding-bottom-5">
-        <div class="container-fluid">
+    <section class="padding-top-4">
+        <div class="container">
             <div class="d-flex align-items-center justify-content-between">
-                <div class="font-size-24 font-weight-600">Products for you</div>
-                <router-link to="/products" class="button-outline-primary round">See more <span class="material-icons-outlined">east</span></router-link>
+                <div class="font-size-24 font-weight-600">Best Selling Products</div>
+                <router-link to="/" class="button-outline-primary round">See more <span class="material-icons-outlined">east</span></router-link>
             </div>
-            <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-3 row-cols-1 g-3 mt-2">
-                <div class="col" v-for="product in products.slice(5,15)" :key="product.id">
+            <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-3 row-cols-2 g-3 mt-2">
+                <div class="col" v-for="product in products.slice(0,5)" :key="product.id">
                     <div class="card round hover-scale-1 h-100">
                         <router-link :to="{ name: 'ProductSingle', params: { category: product.category, id: product.id } }">
                             <img class="card-product-img" loading="lazy" :src="product.image" alt="" />
                         </router-link>
-                        <a href="#" class="button-outline-danger circle position-absolute top-0 right-0 my-2 mx-2"><span class="material-icons-outlined">favorite_border</span></a>
+                        <a href="#" class="button-light circle position-absolute top-0 right-0 my-2 mx-2"><span class="material-icons-outlined">favorite_border</span></a>
+                        <div class="body d-grid">
+                            <div class="badge round background-accent-tertiary sm">{{ product.category }}</div>
+                            <router-link :to="{ name: 'ProductSingle', params: { category: product.category, id: product.id } }" class="font-size-14 font-weight-500 mt-2 text-truncate-2">{{ product.title }}</router-link>
+                            <div class="font-size-16 font-weight-600 text-color-danger mt-2 mb-2">&#8369;{{ product.price }}</div>
+                            <a href="#" class="button-accent-primary round block"><span class="material-icons-outlined">add_shopping_cart</span> Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="padding-top-4 padding-bottom-3">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="font-size-24 font-weight-600">Products for you</div>
+                <router-link to="/products" class="button-outline-primary round">See more <span class="material-icons-outlined">east</span></router-link>
+            </div>
+            <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-3 row-cols-2 g-3 mt-2">
+                <div class="col" v-for="product in products.slice(5,20)" :key="product.id">
+                    <div class="card round hover-scale-1 h-100">
+                        <router-link :to="{ name: 'ProductSingle', params: { category: product.category, id: product.id } }">
+                            <img class="card-product-img" loading="lazy" :src="product.image" alt="" />
+                        </router-link>
+                        <a href="#" class="button-light circle position-absolute top-0 right-0 my-2 mx-2"><span class="material-icons-outlined">favorite_border</span></a>
                         <div class="body">
-                            <router-link :to="{ name: 'ProductSingle', params: { category: product.category, id: product.id } }" class="font-size-16 font-weight-500">{{ product.title }}</router-link>
-                            <div class="font-size-18 font-weight-600 text-color-danger mt-2 mb-4">&#8369;{{ product.price }}</div>
+                            <router-link :to="{ name: 'ProductSingle', params: { category: product.category, id: product.id } }" class="font-size-14 font-weight-500 text-truncate-2">{{ product.title }}</router-link>
+                            <div class="font-size-16 font-weight-600 text-color-danger mt-2 mb-2">&#8369;{{ product.price }}</div>
                             <div class="star-rating">
                                 <star-rating :ratings="product.rating.rate"></star-rating>
-                                <div class="font-size-12 font-weight-500">{{ product.rating.count }} Reviews</div>
+                                <div class="font-size-12 font-weight-500">{{ product.rating.count }}</div>
                             </div>
                         </div>
                     </div>

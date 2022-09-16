@@ -5,16 +5,15 @@ $default-transition: all 0.2s ease !default;
 #app {    
     header { 
         border-bottom: $default-border;
-        background: rgba(var(--color-light-rgb), 0.9);
+        background: rgba(var(--color-light-rgb), 0.99);
         backdrop-filter: blur(8px);
         position: fixed;
         top: 0; 
-        padding: 0 12px;
         display: flex;
         align-items: center;
         justify-content: flex-end;
         transition: $default-transition;
-        height: 75px;
+        height: 60px;
         width: 100%;
         z-index: 3;
         
@@ -24,7 +23,7 @@ $default-transition: all 0.2s ease !default;
             width: 100%;
 
             .brand-logo {
-                width: 170px;
+                width: 100px;
             }
 
             .nav-btn-toggler {
@@ -67,7 +66,7 @@ $default-transition: all 0.2s ease !default;
                 flex-direction: column;
                 gap: 2rem;
                 height: 100vh;
-                background: rgba(var(--color-light-rgb), 0.9);
+                background: rgba(var(--color-light-rgb), 0.99);
                 backdrop-filter: blur(6px);
                 position: fixed;
                 top: 0;
@@ -85,7 +84,8 @@ $default-transition: all 0.2s ease !default;
     main { 
         transition: $default-transition;
         height: 100%;
-        margin-top: 5rem;
+        margin-top: 3.7rem;
+        margin-bottom: 3.7rem;
 
         .container {
             @media (max-width: 1024px) and (min-width: 768px) {

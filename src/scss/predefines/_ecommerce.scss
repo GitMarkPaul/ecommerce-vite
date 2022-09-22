@@ -30,7 +30,11 @@ $default-transition: all 0.2s ease !default;
                 z-index: 1;
                 display: none;
 
-                @media (max-width: 768px) and (min-width: 320px) {
+                @media (max-width: 768px) {
+                    display: flex;
+                }
+
+                @media (max-width: 564px) {
                     display: flex;
                 }
             }
@@ -42,7 +46,11 @@ $default-transition: all 0.2s ease !default;
                 align-items: center;
                 gap: 0.6rem;
 
-                @media (max-width: 768px) and (min-width: 320px) {
+                @media (max-width: 768px) {
+                    display: none;
+                }
+
+                @media (max-width: 564px) {
                     display: none;
                 }
 
@@ -52,6 +60,10 @@ $default-transition: all 0.2s ease !default;
 
                         .nav-text {
                             display: none;
+
+                            @media (max-width: 768px) {
+                                display: flex;
+                            }
 
                             @media (max-width: 564px) {
                                 display: flex;

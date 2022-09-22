@@ -49,7 +49,7 @@
 						</a>
 						<ul class="dropdown-menu">
 							<li>
-								<router-link :to="{ name: 'Account' }" class="dropdown-item">
+								<router-link :to="{ name: 'Account' }" class="nav-link dropdown-item">
 									Manage Account
 								</router-link>
 							</li>

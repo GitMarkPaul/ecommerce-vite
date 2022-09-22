@@ -12,7 +12,7 @@
 						<div class="card hover-scale-1 round text-center h-100">
 							<div class="body">
 								<div class="initial-circle-lg">
-									<span class="material-icons-outlined hover-img-scale-1">storefront</span>
+									<span class="material-symbols-rounded hover-img-scale-1">storefront</span>
 								</div>
 								<div class="font-size-16 font-weight-600 mt-2">Followed Stores</div>
 							</div>
@@ -24,7 +24,7 @@
 						<div class="card hover-scale-1 round text-center h-100">
 							<div class="body">
 								<div class="initial-circle-lg background-accent-tertiary">
-									<span class="material-icons-outlined hover-img-scale-1">reviews</span>
+									<span class="material-symbols-rounded hover-img-scale-1">reviews</span>
 								</div>
 								<div class="font-size-16 font-weight-600 mt-2">Product Reviews</div>
 							</div>
@@ -36,7 +36,7 @@
 						<div class="card hover-scale-1 round text-center h-100">
 							<div class="body">
 								<div class="initial-circle-lg background-accent-danger">
-									<span class="material-icons-outlined hover-img-scale-1">cancel</span>
+									<span class="material-symbols-rounded hover-img-scale-1">cancel</span>
 								</div>
 								<div class="font-size-16 font-weight-600 mt-2">Cancellations</div>
 							</div>
@@ -48,7 +48,7 @@
 						<div class="card hover-scale-1 round text-center h-100">
 							<div class="body">
 								<div class="initial-circle-lg background-accent-success">
-									<span class="material-icons-outlined hover-img-scale-1">assignment_return</span>
+									<span class="material-symbols-rounded hover-img-scale-1">assignment_return</span>
 								</div>
 								<div class="font-size-16 font-weight-600 mt-2">Refund & Returns</div>
 							</div>
@@ -60,7 +60,7 @@
 						<div class="card hover-scale-1 round text-center h-100">
 							<div class="body">
 								<div class="initial-circle-lg background-accent-warning">
-									<span class="material-icons-outlined hover-img-scale-1">token</span>
+									<span class="material-symbols-rounded hover-img-scale-1">token</span>
 								</div>
 								<div class="font-size-16 font-weight-600 mt-2">Tokens</div>
 							</div>
@@ -72,7 +72,7 @@
 						<div class="card hover-scale-1 round text-center h-100">
 							<div class="body">
 								<div class="initial-circle-lg">
-									<span class="material-icons-outlined hover-img-scale-1">translate</span>
+									<span class="material-symbols-rounded hover-img-scale-1">translate</span>
 								</div>
 								<div class="font-size-16 font-weight-600 mt-2">Language</div>
 							</div>
@@ -84,7 +84,7 @@
 						<div class="card hover-scale-1 round text-center h-100">
 							<div class="body">
 								<div class="initial-circle-lg background-accent-danger">
-									<span class="material-icons-outlined hover-img-scale-1">loyalty</span>
+									<span class="material-symbols-rounded hover-img-scale-1">loyalty</span>
 								</div>
 								<div class="font-size-16 font-weight-600 mt-2">Vouchers</div>
 							</div>

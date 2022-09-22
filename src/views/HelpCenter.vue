@@ -139,7 +139,7 @@
 
 <style lang="scss">
     .form-hc-control {
-        background: var(--color-light);
+        background: var(--color-light) !important;
         padding: 14px 40px !important;
     }
 </style>

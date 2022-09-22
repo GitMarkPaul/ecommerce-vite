@@ -10,6 +10,8 @@
                 reviews: [],
                 quantity: 1,
                 min: 1,
+                variationPrice: null,
+                variationStock: null,
             };
         },
 
@@ -43,9 +45,13 @@
                 this.quantity = this.quantity === 1 ? 1 : this.quantity - 1;
             },
 
-            formatPrice(value) {
-                let val = (value/1).toFixed(2).replace('.', ',')
-                return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")
+            variationAppendContent(e) {
+                this.variationPrice = e.target.getAttribute('data-variation-price');
+                this.variationStock = e.target.getAttribute('data-variation-stock');
+            },
+
+            formatPrice(num) {
+                return new Intl.NumberFormat('default').format(num);
             }
         },
 
@@ -82,38 +88,127 @@
             </div>
             <div class="row g-5 pt-2">
                 <div class="col-xl-12">
-                    <div class="card background-accent-secondary">
+                    <div class="card">
                         <div class="body">
                             <div class="row g-4">
-                                <div class="col-xl-4 col-md-4">
+                                <div class="col-xl-4 col-lg-4 col-md-4">
                                     <div class="thumbnail">
                                         <div class="item w-100 mb-3">
                                             <img class="product-image round" :src="productSingle.image" alt="">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-5 col-md-5">
+                                <div class="col-xl-5 col-lg-8 col-md-8">
                                     <div class="badge round background-accent-tertiary">{{ productSingle.category }}</div>
                                     <div class="font-size-24 font-weight-600">{{ productSingle.title }}</div>
-                                    <div class="star-rating star-rating-md pt-3">
-                                        <StarRating :ratings="productSingle.rating.rate" size="font-size-24"></StarRating>
+                                    <div class="d-flex align-items-center justify-content-between gap-2 mt-3">
+                                        <div class="star-rating star-rating-md">
+                                            <div class="font-size-16 font-weight-500">{{ productSingle.rating.rate }}</div>
+                                            <StarRating :ratings="productSingle.rating.rate" size="font-size-24"></StarRating>
+                                        </div>
                                         <div class="font-size-16 font-weight-500">{{ productSingle.rating.count }} Reviews</div>
                                     </div>
-                                    <div class="font-size-26 font-weight-600 text-color-danger mt-3">&#8369;{{ productSingle.price * quantity  }}</div>
+                                    <div class="font-size-26 font-weight-600 text-color-danger mt-3" v-if="!variationPrice">&#8369;{{ formatPrice(productSingle.price * quantity) }}</div>
+                                    <div class="font-size-26 font-weight-600 text-color-danger mt-3" v-else>&#8369;{{ formatPrice(variationPrice * quantity) }}</div>
+
+                                    <div class="d-grid align-items-center gap-2 mt-4">
+                                        <div class="font-size-16">Variation</div>
+
+                                        <div class="variation-menu">
+                                            <button @click="variationAppendContent" data-variation-price="399" data-variation-color="Muddy Red" data-variation-stock="243" class="variation-item" type="button" role="tab" aria-selected="true">Muddy Red</button>
+                                            <button @click="variationAppendContent" data-variation-price="499" data-variation-color="Khaki" data-variation-stock="745" class="variation-item" type="button" role="tab" aria-selected="true">Khaki</button>
+                                            <button @click="variationAppendContent" data-variation-price="299" data-variation-color="Muddy Brown" data-variation-stock="0" class="variation-item" type="button" role="tab" aria-selected="true">Muddy Brown</button>
+                                            <button @click="variationAppendContent" data-variation-price="199" data-variation-color="Gray" data-variation-stock="0" class="variation-item" type="button" role="tab" aria-selected="true" disabled="true">Gray</button>
+                                        </div>
+                                    </div>
                                     
-                                    <div class="quantifier mt-4">
-                                        <button type="button" class="button-accent-dark circle" @click="decrement">
-                                            <span class="material-icons-outlined">remove</span>
-                                        </button>
-                                        <div class="background-accent-dark round py-2 px-5 font-size-18">{{ quantity }}</div>
-                                        <button type="button" class="button-accent-dark circle" @click="increment">
-                                            <span class="material-icons-outlined">add</span>
-                                        </button>
+                                    <div class="d-grid align-items-center gap-2 mt-4">
+                                        <div class="font-size-16">Quantity</div>
+                                        <div class="font-size-14 text-color-danger" v-if="variationStock == 0">out of stock</div>
+                                        <div class="font-size-14" v-else>{{ variationStock }} pieces available</div>
+                                        <div class="quantifier">
+                                            <button type="button" class="button-accent-dark xs circle" @click="decrement">
+                                                <span class="material-icons-outlined">remove</span>
+                                            </button>
+                                            <div class="background-accent-dark round py-1 px-5 font-size-18">{{ quantity }}</div>
+                                            <button type="button" class="button-accent-dark xs circle" @click="increment">
+                                                <span class="material-icons-outlined">add</span>
+                                            </button>
+                                        </div>
                                     </div>
 
                                     <div class="d-flex gap-3 mt-4">
+                                        <button type="button" class="button-accent-primary round block md">Add to Cart</button>
                                         <button type="button" class="button-warning round block md">Buy Now</button>
-                                        <button type="button" class="button-primary round block md">Add to Cart</button>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between gap-3 mt-2">
+                                        <button type="button" class="button-link-dark round"><span class="material-icons-outlined">favorite_border</span> Add to wishlist</button>
+                                        <button type="button" class="button-link-dark round"><span class="material-icons-outlined">share</span> Share</button>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-12 col-md-12">
+                                    <div class="border round background-accent-secondary py-3 px-3 mb-3">
+                                        <div class="row row-cols-xl-1 align-items-center g-3">
+                                            <div class="col d-flex align-items-center gap-2">
+                                                <img src="../assets/users/avatar.jpg" class="avatar-circle-md" alt="">
+                                                <div>
+                                                    <div class="font-size-14 font-weight-600">SM Mega Mall</div>
+                                                    <div class="font-size-13">Joined 3 years ago</div>
+                                                </div>
+                                            </div>
+                                            <div class="col d-flex gap-2">
+                                                <router-link :to="{ name: 'Chat' }" class="button-outline-primary round block"><span class="material-icons-outlined">chat</span> Chat</router-link>
+                                                <router-link :to="{ name: 'Store' }" class="button-outline-primary round block"><span class="material-icons-outlined">storefront</span>Visit</router-link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row row-cols-xl-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 g-4">
+                                        <div class="col d-flex gap-3">
+                                            <div class="initial-circle-sm background-accent-success p-2">
+                                                <span class="material-icons-outlined">payments</span>
+                                            </div>
+                                            <div>
+                                                <div class="font-size-14 font-weight-600">Cash on Delivery Available</div>
+                                                <div class="font-size-13">We dont get paid 'till we have delivered</div>
+                                            </div>
+                                        </div>
+                                        <div class="col d-flex gap-3">
+                                            <div class="initial-circle-sm background-accent-success p-2">
+                                                <span class="material-icons-outlined">published_with_changes</span>
+                                            </div>
+                                            <div>
+                                                <div class="font-size-14 font-weight-600">Return & Warranty</div>
+                                                <div class="font-size-13">7 Days Return to Seller Warranty if Available</div>
+                                            </div>
+                                        </div>
+                                        <div class="col d-flex gap-3">
+                                            <div class="initial-circle-sm background-accent-success p-2">
+                                                <span class="material-icons-outlined">local_shipping</span>
+                                            </div>
+                                            <div>
+                                                <div class="font-size-14 font-weight-600">Standard Delivery</div>
+                                                <div class="font-size-13">1 - 3 Working Days Php 29.50</div>
+                                            </div>
+                                        </div>
+                                        <div class="col d-flex gap-3">
+                                            <div class="initial-circle-sm background-accent-success p-2">
+                                                <span class="material-icons-outlined">location_on</span>
+                                            </div>
+                                            <div>
+                                                <div class="font-size-14 font-weight-600">Ships From</div>
+                                                <div class="font-size-13">MARINDUQUE-SANTA-CRUZ, MARINDUQUE</div>
+                                            </div>
+                                        </div>
+                                        <div class="col d-flex gap-3">
+                                            <div class="initial-circle-sm background-accent-success p-2">
+                                                <span class="material-icons-outlined">schedule</span>
+                                            </div>
+                                            <div>
+                                                <div class="font-size-14 font-weight-600">Response Time</div>
+                                                <div class="font-size-13">within minutes</div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -141,15 +236,28 @@
                             </div>
 
                             <div class="review-wrapper">
-                                <div class="review-item" v-for="review in reviews.slice(0, 12)" :key="review.id">
+                                <div class="review-item" v-for="review in reviews.slice(0, 3)" :key="review.id">
                                     <div class="d-flex align-items-center gap-2">
                                         <img src="../assets/placeholders/student.png" class="avatar-circle-sm" alt="">
-                                        <div class="font-size-13 font-weight-600">{{ review.email }}</div>
+                                        <div>
+                                            <div class="font-size-13 font-weight-600">{{ review.email }}</div>
+                                            <div class="star-rating mt-1">
+                                                <StarRating :ratings="productSingle.rating.rate"></StarRating>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="background-accent-medium round p-3 mt-2">
+                                        <div class="font-size-13 mb-1">07 July 2021</div>
                                         {{ review.body }}
                                     </div>
+                                    <div class="d-flex justify-content-between gap-3 mt-2">
+                                        <button type="button" class="button-link-dark round"><span class="material-symbols-rounded">thumb_up</span> 2 found this helpful</button>
+                                        <button type="button" class="button-link-dark circle"><span class="material-icons-outlined">more_horiz</span></button>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="mt-2 d-flex justify-content-center">
+                                <button type="button" class="button-accent-dark text-center round md"><span class="material-icons-outlined">refresh</span> View more</button>
                             </div>
                         </div>
                     </div>
@@ -195,6 +303,39 @@
 
 <style lang="scss">
 
+    .variation-menu {
+        display: flex;
+        flex-flow: wrap;
+        gap: 0.6rem;
+
+        .variation-item.active {
+            background: var(--color-primary);
+            color: var(--color-primary-contrast);
+            border: 1px solid var(--color-primary);
+        }
+
+        .variation-item {
+            color: var(--color-dark);
+            background: rgba(var(--color-medium-rgb), 0.2);
+            border: 1px solid var(--color-medium);
+            border-radius: 8px;
+            padding: 6px 12px;
+
+            &:active, &:focus {
+                background: var(--color-primary);
+                color: var(--color-primary-contrast);
+                border: 1px solid var(--color-primary);
+            }
+
+            &:disabled {
+                background: inherit;
+                border: 1px solid var(--color-medium);
+                color: var(--color-medium);
+                cursor: not-allowed;
+            }
+        }
+    }
+
     .review-wrapper {
         margin-top: 2rem;
         display: grid;
@@ -209,7 +350,7 @@
 
     .star-rating-md {
         span {
-            font-size: 22px;
+            font-size: 20px;
         }
     }
     

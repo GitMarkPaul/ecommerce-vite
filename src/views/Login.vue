@@ -1,17 +1,17 @@
 <template>
-    <section class="padding-top-3 padding-bottom-5">
+    <section class="padding-top-3 padding-bottom-3">
         <div class="container">
             <div class="row align-items-center justify-content-center g-5">
                 <div class="col-xl-5 col-lg-5 col-md-5">
-                    <div class="font-size-40 font-weight-600 text-center">Login to your Auda account</div>
+                    <div class="font-size-32 font-weight-600 text-center">Login to your Auda account</div>
                     <div class="row g-2 margin-top-2">
                         <div class="col-xl-12">
                             <form action="">
-                                <div class="row g-3">
+                                <div class="row g-4">
                                     <div class="col-xl-12">
                                         <div class="form">
                                             <label for="username" class="form-label">Username</label>
-                                            <input type="text" class="form-control form-input-lg" placeholder="Email or Username" required>
+                                            <input type="text" class="form-control" placeholder="Email or Username" required>
                                         </div>
                                     </div>
                                     <div class="col-xl-12">
@@ -20,7 +20,7 @@
                                                 <label for="password" class="form-label">Password</label>
                                                 <a href="" class="font-size-14">Forgot your password?</a>
                                             </div>
-                                            <input type="password" class="form-control form-input-lg" placeholder="Password" required>
+                                            <input type="password" class="form-control" placeholder="Password" required>
                                         </div>
                                     </div>
                                     <div class="col-xl-12">
@@ -30,7 +30,7 @@
                             </form>
                         </div>
                         <div class="col-xl-12">
-                            <a href="" class="button-link-dark md block">Don't have an account yet? Register</a>
+                            <router-link :to="{ name: 'Register' }" class="button-link-dark md block">Don't have an account yet? Register</router-link>
                         </div>
                     </div>
                 </div>

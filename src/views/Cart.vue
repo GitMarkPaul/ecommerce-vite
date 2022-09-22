@@ -40,15 +40,13 @@
             <div class="bread">
                 <ol class="bread-menu">
                     <li class="bread-item">
-                        <router-link to="/" class="bread-link">Home</router-link>
+                        <router-link :to="{ name: 'Home' }" class="bread-link">Home</router-link>
                     </li>
                     <li class="bread-item">
-                        <router-link to="/products" class="bread-link">Products</router-link>
-                    </li>
-                    <li class="bread-item">
-                        <div class="bread-link" aria-current="page">Shopping Cart</div>
+                        <div class="bread-link" aria-current="page">Cart</div>
                     </li>
                 </ol>
+                <h4>Your Shopping Cart</h4>
             </div>
 
             <div class="row g-4 pt-2">
@@ -129,19 +127,21 @@
                             <table class="table table-bordered mt-3">
                                 <thead>
                                     <tr>
-                                        <th>Subtotal (3 item(s))</th>
+                                        <th class="font-weight-500">Subtotal (3 item(s))</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>3,499</td>
+                                        <td class="font-size-18 font-weight-600">&#8369; 3,499</td>
                                     </tr>
                                 </tbody>
                             </table>
 
+                            <div class="font-size-16">Shipping, taxes, and discounts will be calculated at checkout.</div>
+
                             <div class="d-grid gap-2 mt-3">
-                                <a href="" class="button-dark md round block">Proceed to checkout</a>
-                                <router-link to="/" class="button-outline-dark md round block">Continue shopping</router-link>
+                                <router-link :to="{ name: 'Shipping' }" class="button-dark md round block">Proceed to checkout</router-link>
+                                <router-link :to="{ name: 'Home' }" class="button-outline-dark md round block">Continue shopping</router-link>
                             </div>
                         </div>
                     </div>
@@ -160,8 +160,8 @@
     }
 
     .cart-img {
-        width: 130px;
-        height: 130px;
+        width: 100px;
+        height: 100px;
         object-fit: cover;
 
         @media (max-width: 564px) {

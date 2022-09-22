@@ -12,7 +12,7 @@
                 </ol>
             </div>
             <div class="d-flex align-items-center justify-content-between">
-                <div class="font-size-24 font-weight-600">Browse products by categories</div>
+                <div class="font-size-24 font-weight-600">Browse products by store categories</div>
             </div>
 
             <div class="row row-cols-xl-6 row-cols-lg-5 row-cols-md-4 row-cols-sm-4 row-cols-2 g-3 mt-2">

@@ -41,6 +41,7 @@ $card-padding: 16px;
         object-fit: cover;
         border-top-left-radius: $card-border-radius;
         border-top-right-radius: $card-border-radius;
+        background: rgba(var(--color-dark-rgb), 0.1);
     }
 
     .card-img-overlay {

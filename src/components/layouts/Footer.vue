@@ -9,17 +9,17 @@
 						<li><a href="" class="footer-link">Order Tracking</a></li>
 						<li><a href="" class="footer-link">Free Shipping</a></li>
 						<li><a href="" class="footer-link">Return & Refund</a></li>
-						<li><a href="" class="footer-link">Astra Guarantee</a></li>
+						<li><a href="" class="footer-link">Auda Guarantee</a></li>
 						<li><a href="" class="footer-link">Contact Us</a></li>
 					</ul>
 				</div>
 				<div class="col">
-					<div class="font-size-16 font-weight-600">About Astra</div>
+					<div class="font-size-16 font-weight-600">About Auda</div>
 					<ul class="footer-menu">
 						<li><a href="" class="footer-link">About Us</a></li>
-						<li><a href="" class="footer-link">Astra Blog</a></li>
-						<li><a href="" class="footer-link">Astra Careers</a></li>
-						<li><a href="" class="footer-link">Astra Policies</a></li>
+						<li><a href="" class="footer-link">Auda Blog</a></li>
+						<li><a href="" class="footer-link">Auda Careers</a></li>
+						<li><a href="" class="footer-link">Auda Policies</a></li>
 						<li><a href="" class="footer-link">Privacy Policy</a></li>
 						<li><a href="" class="footer-link">Seller Center</a></li>
 					</ul>
@@ -32,7 +32,7 @@
 						<li><a href="" class="footer-link">Gcash</a></li>
 						<li><a href="" class="footer-link">Debit/Credit Card</a></li>
 						<li><a href="" class="footer-link">Stripe</a></li>
-						<li><a href="" class="footer-link">Astra Pay</a></li>
+						<li><a href="" class="footer-link">Auda Pay</a></li>
 					</ul>
 				</div>
 				<div class="col">

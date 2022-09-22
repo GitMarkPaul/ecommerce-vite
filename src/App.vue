@@ -7,6 +7,8 @@
 	import Interest from './components/partials/offcanvas/Interest.vue'
 	import Search from './components/partials/modals/Search.vue'
 	import Delete from './components/partials/modals/Delete.vue'
+	import DebitCredit from './components/partials/modals/DebitCredit.vue'
+	import AudaPay from './components/partials/modals/AudaPay.vue'
 </script>
 
 <template>
@@ -17,11 +19,14 @@
 
 	<Footer></Footer>
 
+	<!-- Offcanvas -->
 	<Interest></Interest>
 
+	<!-- Modals -->
 	<Search></Search>
-
 	<Delete></Delete>
+	<DebitCredit></DebitCredit>
+	<AudaPay></AudaPay>
 	
 </template>
 

@@ -1,6 +1,10 @@
 <script setup>
     import { onMounted, ref } from 'vue';
     import StarRating from '../components/StarRating.vue';
+    // Import Swiper Vue.js components
+    import { Swiper, SwiperSlide } from 'swiper/vue';
+    // Import Swiper styles
+    import 'swiper/css';
     
     const products = ref([]);
     
@@ -17,31 +21,57 @@
 <template>
     <section class="padding-top-2">
         <div class="container">
-            <div class="background-accent-warning p-xl-5 p-4 round">
-                <div class="row align-items-center justify-content-center g-5">
-                    <div class="col-xl-7 col-lg-6 col-md-6">
-                        <h1 class="font-weight-800 font-size-44">The Masterpieces of Pacificas Wood Furniture</h1>
-                        <p class="font-size-20">Enhance your home and property with beautifully rendered furniture pieces that can last a lifetime.</p>
-                        <div class="d-flex gap-3 pt-4">
-                            <a href="#contact" class="button-dark round lg">Buy Now <span class="material-icons-outlined">east</span></a>
-                            <div class="button-light round lg">&#8369;2,999 only</div>
+            <swiper
+                :slides-per-view="1"
+                :space-between="50">
+                <swiper-slide>
+                    <div class="background-accent-warning p-xl-5 p-4 round">
+                        <div class="row align-items-center justify-content-center g-5">
+                            <div class="col-xl-7 col-lg-6 col-md-6">
+                                <h1 class="font-weight-800 font-size-44">The Masterpieces of Pacificas Wood Furniture</h1>
+                                <p class="font-size-20">Enhance your home and property with beautifully rendered furniture pieces that can last a lifetime.</p>
+                                <div class="d-flex gap-3 pt-4">
+                                    <a href="#contact" class="button-dark round lg">Buy Now <span class="material-icons-outlined">east</span></a>
+                                    <div class="button-light round lg">&#8369;2,999 only</div>
+                                </div>
+                            </div>
+                            <div class="col-xl-5 col-lg-6 col-md-6">
+                                <div class="d-flex justify-content-center">
+                                    <img class="cta-product" src="../assets/placeholders/banners/cta-product-1.jpg" width="100%" alt="" />
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-xl-5 col-lg-6 col-md-6">
-                        <div class="d-flex justify-content-center">
-                            <img class="cta-product" src="../assets/placeholders/banners/cta-product-1.jpg" width="100%" alt="" />
+                </swiper-slide>
+
+                <swiper-slide>
+                    <div class="background-accent-warning p-xl-5 p-4 round">
+                        <div class="row align-items-center justify-content-center g-5">
+                            <div class="col-xl-7 col-lg-6 col-md-6">
+                                <h1 class="font-weight-800 font-size-44">The Masterpieces of Pacificas Wood Furniture</h1>
+                                <p class="font-size-20">Enhance your home and property with beautifully rendered furniture pieces that can last a lifetime.</p>
+                                <div class="d-flex gap-3 pt-4">
+                                    <a href="#contact" class="button-dark round lg">Buy Now <span class="material-icons-outlined">east</span></a>
+                                    <div class="button-light round lg">&#8369;2,999 only</div>
+                                </div>
+                            </div>
+                            <div class="col-xl-5 col-lg-6 col-md-6">
+                                <div class="d-flex justify-content-center">
+                                    <img class="cta-product" src="../assets/placeholders/banners/cta-product-1.jpg" width="100%" alt="" />
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                </swiper-slide>
+            </swiper>
         </div>
     </section>
 
     <section class="padding-top-2">
         <div class="container">
             <div class="d-flex align-items-center justify-content-between">
-                <div class="font-size-24 font-weight-600">Shop by Category</div>
-                <router-link to="/categories" class="button-outline-dark round">See more <span class="material-icons-outlined">east</span></router-link>
+                <div class="font-size-24 font-weight-600">Shop by Store Category</div>
+                <router-link to="/categories" class="button-accent-primary round">See more <span class="material-icons-outlined">east</span></router-link>
             </div>
 
             <div class="row row-cols-xl-6 row-cols-lg-5 row-cols-md-4 row-cols-sm-4 row-cols-2 g-3 mt-2">
@@ -249,7 +279,7 @@
         <div class="container">
             <div class="d-flex align-items-center justify-content-between">
                 <div class="font-size-24 font-weight-600">Best Selling Products</div>
-                <router-link to="/" class="button-outline-primary round">See more <span class="material-icons-outlined">east</span></router-link>
+                <router-link to="/" class="button-accent-primary round">See more <span class="material-icons-outlined">east</span></router-link>
             </div>
             <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-3 row-cols-2 g-3 mt-2">
                 <div class="col" v-for="product in products.slice(0,5)" :key="product.id">
@@ -274,7 +304,7 @@
         <div class="container">
             <div class="d-flex align-items-center justify-content-between">
                 <div class="font-size-24 font-weight-600">Products for you</div>
-                <router-link to="/products" class="button-outline-primary round">See more <span class="material-icons-outlined">east</span></router-link>
+                <router-link to="/products" class="button-accent-primary round">See more <span class="material-icons-outlined">east</span></router-link>
             </div>
             <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-3 row-cols-2 g-3 mt-2">
                 <div class="col" v-for="product in products.slice(5,20)" :key="product.id">

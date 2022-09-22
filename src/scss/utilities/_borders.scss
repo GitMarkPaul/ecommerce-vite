@@ -1,0 +1,19 @@
+// Maps: Theme Colors
+$mp-theme-colors: (
+    "primary":      var(--color-primary),
+    "secondary":    var(--color-secondary),
+    "tertiary":     var(--color-tertiary),
+    "success":      var(--color-success),
+    "warning":      var(--color-warning),
+    "danger":       var(--color-danger),
+    "light":        var(--color-light),
+    "medium":       var(--color-medium),
+    "dark":         var(--color-dark)
+) !default;
+
+// Colors
+@each $color, $value in $mp-theme-colors {
+    .border-#{$color} {
+        border: 1 px solid $value;
+    }
+}

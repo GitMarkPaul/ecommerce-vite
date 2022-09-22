@@ -1,7 +1,7 @@
 <template>
     <header>
 		<div class="container">
-			<nav>
+			<nav class="navbar-nav">
 				<div class="d-flex align-items-center gap-2">
 					<router-link to="/">
 						<img class="brand-logo" src="../../assets/auda.svg" alt="" />
@@ -12,6 +12,12 @@
 					</div>
 				</div>
 				<ul class="nav-menu">
+					<li class="nav-item">
+						<router-link to="/" class="nav-link button-link-dark round">
+							<span class="material-icons-outlined">local_shipping</span>
+							<div class="nav-text">Drop Shipping</div>
+						</router-link>
+					</li>
 					<li class="nav-item">
 						<router-link to="/shopping-cart" class="nav-link button-link-dark round" data-badge="3">
 							<span class="material-icons-outlined">shopping_bag</span>
@@ -43,14 +49,14 @@
 						</a>
 						<ul class="dropdown-menu">
 							<li>
-								<a class="dropdown-item" href="profile.html">
+								<router-link :to="{ name: 'Account' }" class="dropdown-item">
 									Manage Account
-								</a>
+								</router-link>
 							</li>
 							<li>
-								<a class="dropdown-item" href="#">
+								<router-link :to="{ name: 'Orders' }" class="dropdown-item">
 									My Orders
-								</a>
+								</router-link>
 							</li>
 							<li>
 								<a class="dropdown-item" href="settings.html">
@@ -69,20 +75,22 @@
 							</li>
 							<li><hr class="dropdown-divider"></li>
 							<li>
-								<router-link to="/login" class="dropdown-item font-weight-600">
+								<router-link :to="{ name: 'Login' }" class="dropdown-item font-weight-600">
 									Login
 								</router-link>
 							</li>
 							<li>
-								<router-link to="/login" class="dropdown-item font-weight-600">
+								<router-link :to="{ name: 'Register' }" class="dropdown-item font-weight-600">
 									Signup
 								</router-link>
 							</li>
 						</ul>
 					</li>
 				</ul>
-				<button type="button" class="button-link-dark circle search-btn" data-bs-toggle="modal" data-bs-target="#searchForm"><span class="material-icons-outlined">search</span></button>
-				<button type="button" class="button-link-dark circle nav-btn-toggler"><span class="material-icons-outlined nav-toggler-icon">menu</span></button>
+				<div class="d-flex gap-2">
+					<button type="button" class="button-accent-dark circle search-btn" data-bs-toggle="modal" data-bs-target="#searchForm"><span class="material-icons-outlined">search</span></button>
+					<button type="button" class="button-accent-dark circle nav-btn-toggler"><span class="material-icons-outlined nav-toggler-icon">menu</span></button>
+				</div>
 			</nav>
 		</div>
 	</header>

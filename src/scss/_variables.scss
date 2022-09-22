@@ -80,13 +80,13 @@
         filter: brightness(.8) contrast(1.2);
     }
 
-    body .brand-logo {
+    body .brand-logo, .btn-close {
         filter: brightness(0) invert(0.9);
     }
 
     body {
         // Dark 
-        --color-dark: #e4e6eb;
+        --color-dark: #e6e6e6;
         --color-dark-rgb: 244,245,248;
         --color-dark-contrast: #000000;
         --color-dark-contrast-rgb: 0,0,0;

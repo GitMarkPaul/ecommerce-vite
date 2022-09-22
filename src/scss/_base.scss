@@ -143,3 +143,11 @@ a {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
 }
+
+// Overflows
+
+.overflow-scroll-wrap {
+    overflow: auto;
+    white-space: nowrap;
+    flex-flow: nowrap;
+}

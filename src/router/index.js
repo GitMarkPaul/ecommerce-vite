@@ -14,11 +14,27 @@ const routes = [
         }
     },
     {
+        path: '/account',
+        name: 'Account',
+        component: loadComponent('Account'),
+        meta: {
+            title: 'Account - Auda Philippines: Online Shopping'
+        }
+    },
+    {
         path: '/login',
         name: 'Login',
         component: loadComponent('Login'),
         meta: {
             title: 'Login - Auda Philippines: Online Shopping'
+        }
+    },
+    {
+        path: '/register',
+        name: 'Register',
+        component: loadComponent('Register'),
+        meta: {
+            title: 'Register - Auda Philippines: Online Shopping'
         }
     },
     {
@@ -43,6 +59,46 @@ const routes = [
         component: loadComponent('Cart'),
         meta: {
             title: 'Shopping Cart - Auda Philippines: Online Shopping'
+        }
+    },
+    {
+        path: '/shipping-information',
+        name: 'Shipping',
+        component: loadComponent('Shipping'),
+        meta: {
+            title: 'Shipping Information - Auda Philippines: Online Shopping'
+        }
+    },
+    {
+        path: '/payment',
+        name: 'Payment',
+        component: loadComponent('Payment'),
+        meta: {
+            title: 'Payment Information - Auda Philippines: Online Shopping'
+        }
+    },
+    {
+        path: '/orders',
+        name: 'Orders',
+        component: loadComponent('Orders'),
+        meta: {
+            title: 'Orders - Auda Philippines: Online Shopping'
+        }
+    },
+    {
+        path: '/order-details',
+        name: 'OrderDetails',
+        component: loadComponent('OrderDetails'),
+        meta: {
+            title: 'Order Details - Auda Philippines: Online Shopping'
+        }
+    },
+    {
+        path: '/store',
+        name: 'Store',
+        component: loadComponent('Store'),
+        meta: {
+            title: 'Store - Auda Philippines: Online Shopping'
         }
     },
     {
@@ -75,6 +131,14 @@ const routes = [
         component: loadComponent('HelpCenter'),
         meta: {
             title: 'Help Center - Auda Philippines: Online Shopping'
+        }
+    },
+    {
+        path: '/chat',
+        name: 'Chat',
+        component: loadComponent('Chat'),
+        meta: {
+            title: 'Auda Chat - Auda Philippines: Online Shopping'
         }
     }
 ]

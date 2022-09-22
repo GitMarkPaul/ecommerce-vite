@@ -148,7 +148,7 @@
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-lg-12 col-md-12">
-                                    <div class="border round background-accent-secondary py-3 px-3 mb-3">
+                                    <div class="round background-accent-medium py-3 px-3 mb-3">
                                         <div class="row row-cols-xl-1 align-items-center g-3">
                                             <div class="col d-flex align-items-center gap-2">
                                                 <img src="../assets/users/avatar.jpg" class="avatar-circle-md" alt="">
@@ -158,8 +158,8 @@
                                                 </div>
                                             </div>
                                             <div class="col d-flex gap-2">
-                                                <router-link :to="{ name: 'Chat' }" class="button-outline-primary round block"><span class="material-icons-outlined">chat</span> Chat</router-link>
-                                                <router-link :to="{ name: 'Store' }" class="button-outline-primary round block"><span class="material-icons-outlined">storefront</span>Visit</router-link>
+                                                <router-link :to="{ name: 'Chat' }" class="button-accent-primary round block"><span class="material-icons-outlined">chat</span> Chat</router-link>
+                                                <router-link :to="{ name: 'Store' }" class="button-accent-primary round block"><span class="material-icons-outlined">storefront</span>Visit</router-link>
                                             </div>
                                         </div>
                                     </div>
@@ -219,7 +219,7 @@
                     <div class="card">
                         <div class="body">
                             <div class="font-size-24 font-weight-600">Product Description</div>
-                            <div class="mt-3 font-size-16">{{ productSingle.description }}</div>
+                            <div class="mt-3">{{ productSingle.description }}</div>
                         </div>
                     </div>
                 </div>

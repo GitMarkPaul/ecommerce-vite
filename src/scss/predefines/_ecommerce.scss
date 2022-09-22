@@ -5,7 +5,7 @@ $default-transition: all 0.2s ease !default;
 #app {    
     header { 
         border-bottom: $default-border;
-        background: rgba(var(--color-light-rgb), 0.99);
+        background: rgba(var(--card-background-rgb), 0.99);
         backdrop-filter: blur(8px);
         position: fixed;
         top: 0; 

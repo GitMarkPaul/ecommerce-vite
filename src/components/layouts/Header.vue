@@ -31,13 +31,13 @@
 						</router-link>
 					</li>
 					<li class="nav-item">
-						<a href="#" class="nav-link button-link-dark round" data-badge="9+">
-							<span class="material-icons-outlined">notifications</span>
-							<div class="nav-text">Notifications</div>
-						</a>
+						<router-link :to="{ name: 'Chat' }" class="nav-link button-link-dark round" data-badge="9+">
+							<span class="material-icons-outlined">chat</span>
+							<div class="nav-text">Messages</div>
+						</router-link>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link button-accent-primary round" data-bs-toggle="offcanvas" data-bs-target="#offcanvasInterests" aria-controls="offcanvasInterests">
+						<a class="button-accent-primary round" data-bs-toggle="offcanvas" data-bs-target="#offcanvasInterests" aria-controls="offcanvasInterests">
 							<span class="material-icons-outlined">interests</span>
 							<div class="nav-text">Interest</div>
 						</a>

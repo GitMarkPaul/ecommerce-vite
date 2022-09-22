@@ -9,7 +9,7 @@ $card-padding: 16px;
     min-width: 0;
     width: 100%;
     word-wrap: break-word;
-    background: var(--color-light);
+    background: var(--card-background);
     background-clip: border-box;
     border: 1px solid rgba(var(--color-dark-rgb), 0.1);
     border-radius: $card-border-radius;

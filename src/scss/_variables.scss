@@ -73,6 +73,9 @@
 
     // Font
     --font-serif: 'Inter', sans-serif;
+
+    --card-background: #ffffff;
+    --card-background-rgb: 255,255,255;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -124,6 +127,9 @@
         --color-light-contrast-rgb: 255,255,255;
         --color-light-shade: #212122;
         --color-light-tint: #222529;
+
+        --card-background: #222529;
+        --card-background-rgb: 34, 37, 41;
     }
 }
 

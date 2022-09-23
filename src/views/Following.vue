@@ -25,10 +25,10 @@
                         <router-link :to="{ name: 'Account' }" class="bread-link">Account</router-link>
                     </li>
                     <li class="bread-item">
-                        <div class="bread-link" aria-current="page">Favorites</div>
+                        <div class="bread-link" aria-current="page">Following</div>
                     </li>
                 </ol>
-                <h4>My Wishlist</h4>
+                <h4>My Followed Stores</h4>
             </div>
 
             <div class="row g-3 pt-2">
@@ -41,12 +41,9 @@
                                 </router-link>
                                 <div class="cart-details">
                                     <router-link :to="{ name: 'ProductSingle', params: { category: product.category, id: product.id } }" class="font-size-16 font-weight-500 text-truncate-2">{{ product.title }}</router-link>
-                                    <div class="font-size-16 font-weight-600 text-color-danger mt-2">&#8369;{{ product.price }}</div>
-                                    <div class="d-flex align-items-center justify-content-between pt-3">
-                                        <div class="d-flex gap-2">
-                                            <button type="button" class="button-accent-dark circle"><span class="material-icons-outlined">add_shopping_cart</span></button>
-                                            <button type="button" class="button-accent-danger circle" data-bs-toggle="modal" data-bs-target="#deleteModal"><span class="material-icons-outlined">delete</span></button>
-                                        </div>
+                                    <div class="d-flex align-items-center justify-content-start gap-1 pt-3">
+                                        <button type="button" class="button-outline-primary round"><span class="material-icons-outlined">contact_support</span> Inquire</button>
+                                        <button type="button" class="button-accent-primary round"><span class="material-icons-outlined">person_remove</span> Unfollow</button>
                                     </div>
                                 </div>
                             </div>
@@ -60,14 +57,9 @@
 
 <style lang="scss">
     .cart-img {
-        width: 120px;
-        height: 120px;
+        width: 60px;
+        height: 60px;
         object-fit: cover;
-
-        @media (max-width: 564px) {
-            width: 60px;
-            height: 60px;
-        }
     }
 
     .cart-items {

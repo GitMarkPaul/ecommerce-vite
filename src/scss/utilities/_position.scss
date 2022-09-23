@@ -1,3 +1,33 @@
+@use 'sass:math';
+
+$utilities: (
+    "top": (
+        "prefix": "top",
+        "values": (
+            "0": 0,
+            "1": 90px,
+        ),
+    ),
+);
+
+// Generate Utility Classes
+@each $property, $map in $utilities {
+    $prefix: map-get($map,  "prefix");
+    $values: map-get($map,  "values");
+
+    @each $k, $v in  $values {
+        @if ($k == "default") {
+            .#{$prefix} {
+                #{$property}: $v !important;
+            }
+        } @else {
+            .#{$prefix}-#{$k} {
+                #{$property}: $v !important;
+            }
+        }
+    }
+}
+
 .position-absolute {
     position: absolute;
     bottom: -50px;
@@ -5,10 +35,6 @@
 
 .position-relative {
     position: relative;
-}
-
-.top-0 {
-    top: 0;
 }
 
 .right-0 {

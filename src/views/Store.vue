@@ -10,7 +10,7 @@
             <div class="row g-3 mt-1">
                 <div class="col-xl-12">
                     <div class="card">
-                        <div class="header" style="background-image: url('../assets/placeholders/banners/cta-product-1.jpg');">
+                        <div class="header">
                             <div class="position-absolute right-0 left-0">
                                 <div class="position-relative display-flex justify-content-between padding-left-2 padding-right-2">
                                     <img src="../assets/placeholders/default-placeholder.png" class="avatar" alt="">
@@ -139,3 +139,9 @@
         </div>
     </section>
 </template>
+
+<style>
+    .header {
+        background-image: url('../assets/footer.svg');
+    }
+</style>

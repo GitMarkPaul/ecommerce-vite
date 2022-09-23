@@ -120,7 +120,7 @@
                     </div>
                 </div>
                 <div class="col-xl-5 col-lg-5">
-                    <div class="card">
+                    <div class="card position-sticky-top top-1">
                         <div class="body">
                             <div class="font-size-18 font-weight-600">Order Summary</div>
 

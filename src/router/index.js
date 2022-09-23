@@ -110,6 +110,30 @@ const routes = [
         }
     },
     {
+        path: '/following',
+        name: 'Following',
+        component: loadComponent('Following'),
+        meta: {
+            title: 'Following - Auda Philippines: Online Shopping'
+        }
+    },
+    {
+        path: '/history',
+        name: 'History',
+        component: loadComponent('History'),
+        meta: {
+            title: 'History - Auda Philippines: Online Shopping'
+        }
+    },
+    {
+        path: '/shipping-address',
+        name: 'ShippingAddress',
+        component: loadComponent('ShippingAddress'),
+        meta: {
+            title: 'Shipping Address - Auda Philippines: Online Shopping'
+        }
+    },
+    {
         path: '/categories',
         name: 'Categories',
         component: loadComponent('Categories'),

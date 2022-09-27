@@ -5,7 +5,7 @@
     
     onMounted(async () => {
         try {
-            const response = await fetch('https://fakestoreapi.com/products');
+            const response = await fetch('https://api.escuelajs.co/api/v1/products');
             products.value = await response.json();
         } catch (err) {
             // Handle error
@@ -36,11 +36,11 @@
                     <div class="card round h-100">
                         <div class="body">
                             <div class="cart-items">
-                                <router-link :to="{ name: 'ProductSingle', params: { category: product.category, id: product.id } }">
-                                    <img class="cart-img round background-accent-medium" loading="lazy" :src="product.image" alt="">
+                                <router-link :to="{ name: 'Store' }">
+                                    <img class="cart-img round background-accent-medium" loading="lazy" :src="product.images[0]" alt="">
                                 </router-link>
                                 <div class="cart-details">
-                                    <router-link :to="{ name: 'ProductSingle', params: { category: product.category, id: product.id } }" class="font-size-16 font-weight-500 text-truncate-2">{{ product.title }}</router-link>
+                                    <router-link :to="{ name: 'Store' }" class="font-size-16 font-weight-500 text-truncate-2">{{ product.title }}</router-link>
                                     <div class="d-flex align-items-center justify-content-start gap-1 pt-3">
                                         <button type="button" class="button-outline-primary round"><span class="material-icons-outlined">contact_support</span> Inquire</button>
                                         <button type="button" class="button-accent-primary round"><span class="material-icons-outlined">person_remove</span> Unfollow</button>
@@ -55,7 +55,7 @@
     </section>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
     .cart-img {
         width: 60px;
         height: 60px;

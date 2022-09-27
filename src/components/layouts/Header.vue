@@ -69,9 +69,9 @@
 								</a>
 							</li>
 							<li>
-								<a class="dropdown-item" href="#">
+								<router-link :to="{ name: 'History' }" class="dropdown-item">
 									Recently Viewed
-								</a>
+								</router-link>
 							</li>
 							<li><hr class="dropdown-divider"></li>
 							<li>

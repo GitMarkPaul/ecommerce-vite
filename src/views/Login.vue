@@ -4,7 +4,10 @@
             <div class="row align-items-center justify-content-center g-5">
                 <div class="col-xl-5 col-lg-5 col-md-5">
                     <div class="font-size-32 font-weight-600 text-center">Login to your Auda account</div>
-                    <div class="row g-2 margin-top-2">
+                    <div class="row g-2 mt-1">
+                        <div class="col-xl-12">
+                            <router-link :to="{ name: 'Register' }" class="button-link-dark md block round">Don't have an account yet? Register</router-link>
+                        </div>
                         <div class="col-xl-12">
                             <form action="">
                                 <div class="row g-4">
@@ -30,7 +33,19 @@
                             </form>
                         </div>
                         <div class="col-xl-12">
-                            <router-link :to="{ name: 'Register' }" class="button-link-dark md block">Don't have an account yet? Register</router-link>
+                            <div class="font-size-14 font-weight-500 text-center py-3">Or, login with</div>
+                        </div>
+                        <div class="col-xl-12">
+                            <div class="d-flex gap-2">
+                                <div class="d-flex align-items-center gap-3 border round py-2 px-2 block hover-scale-1 font-weight-500 background-color-light">
+                                    <div class="initial-circle-sm"><span class="bx bxl-facebook-circle"></span></div>
+                                    facebook
+                                </div>
+                                <div class="d-flex align-items-center gap-3 border round py-2 px-2 block hover-scale-1 font-weight-500 background-color-light">
+                                    <div class="initial-circle-sm"><span class="bx bxl-google"></span></div>
+                                    Google
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

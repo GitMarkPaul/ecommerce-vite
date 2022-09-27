@@ -78,7 +78,7 @@
     --card-background-rgb: 255,255,255;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
     body img {
         filter: brightness(.8) contrast(1.2);
     }

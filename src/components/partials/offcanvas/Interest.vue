@@ -8,7 +8,7 @@
 		<div class="offcanvas-body">
 			<div class="row row-cols-2 g-3">
 				<div class="col">
-					<a href="">
+					<router-link :to="{ name: 'Following' }">
 						<div class="card hover-scale-1 round text-center h-100">
 							<div class="body">
 								<div class="initial-circle-lg">
@@ -17,7 +17,7 @@
 								<div class="font-size-16 font-weight-600 mt-2">Followed Stores</div>
 							</div>
 						</div>
-					</a>
+					</router-link>
 				</div>
 				<div class="col">
 					<a href="">

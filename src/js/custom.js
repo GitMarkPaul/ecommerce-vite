@@ -5,6 +5,20 @@ document.addEventListener('DOMContentLoaded', () => {
     let navMenuEl = document.querySelector('.nav-menu');
     let navLinkEl = document.querySelectorAll('.nav-link');
     let navDropdownLinkEl = document.querySelectorAll('.dropdown-item');
+    let validateFormEl = document.querySelector('.validate-form');
+    let requiredInput = document.querySelector('.form-control');
+
+    // requiredInput.forEach((element) => {
+        requiredInput.addEventListener('keyup', (e) => {
+            e.preventDefault();
+
+            if (!document.getElementById('product').value.length) {
+                document.getElementById('submit-button').disabled = true;
+            } else {
+                document.getElementById('submit-button').disabled = false;
+            }
+        });
+    // });
     
     /* This is the code that is executed when the navBtnEl is clicked. It toggles the navMenuEl class to
     nav-menu-sm. If the navMenuEl class contains nav-menu-sm, then the navBtnIconEl innerHTML is set to

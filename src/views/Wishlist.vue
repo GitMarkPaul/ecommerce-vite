@@ -58,7 +58,7 @@
     </section>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
     .cart-img {
         width: 120px;
         height: 120px;

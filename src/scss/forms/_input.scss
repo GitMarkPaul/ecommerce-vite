@@ -32,9 +32,9 @@ input[type=date] {
 
     @extend %input-default;
 
-    &::-ms-expand {
-        display: none;
-    }
+    // &::-ms-expand {
+    //     display: none;
+    // }
 }
 
 select {

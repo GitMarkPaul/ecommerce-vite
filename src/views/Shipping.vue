@@ -89,25 +89,34 @@
                 <div class="col-xl-5 col-lg-5">
                     <div class="card mb-3">
                         <div class="body">
-                            <div class="font-size-18 font-weight-600">Shipping address</div>
-                            <div class="d-grid gap-2 mt-3">
-                                <div class="d-flex align-items-center gap-3">
+                            <div class="font-size-18 font-weight-600">Shipping information</div>
+                            <div class="d-grid gap-3 mt-3">
+                                <div class="d-flex gap-3">
                                     <div class="initial-circle-sm background-accent-success p-2">
                                         <span class="material-icons-outlined">person</span>
                                     </div>
-                                    <div class="font-size-14 font-weight-500">Juan Dela Cruz</div>
+                                    <div class="me-auto">
+                                        <div class="font-size-16 font-weight-600">Recipient</div>
+                                        <div class="font-size-14 font-weight-500">Juan Dela Cruz</div>
+                                    </div>
                                 </div>
-                                <div class="d-flex align-items-center gap-3">
+                                <div class="d-flex gap-3">
                                     <div class="initial-circle-sm background-accent-success p-2">
                                         <span class="material-icons-outlined">location_on</span>
                                     </div>
-                                    <div class="font-size-14 font-weight-500">Blk 20 Lot 22-24 St. Kolbe Brgy. Saguin San Fernando City, Pampanga</div>
+                                    <div class="me-auto">
+                                        <div class="font-size-16 font-weight-600">Shipping Address</div>
+                                        <div class="font-size-14 font-weight-500">Blk 20 Lot 22-24 St. Kolbe Brgy. Saguin San Fernando City, Pampanga</div>
+                                    </div>
                                 </div>
-                                <div class="d-flex align-items-center gap-3">
+                                <div class="d-flex gap-3">
                                     <div class="initial-circle-sm background-accent-success p-2">
                                         <span class="material-icons-outlined">phone</span>
                                     </div>
-                                    <div class="font-size-14 font-weight-500">09876543211</div>
+                                    <div class="me-auto">
+                                        <div class="font-size-16 font-weight-600">Contact Number</div>
+                                        <div class="font-size-14 font-weight-500">09876543211</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

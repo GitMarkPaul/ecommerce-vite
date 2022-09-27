@@ -50,6 +50,11 @@ $mp-theme-colors: (
             font-size: 21px;
             color: var(--color-#{$color}-contrast);
         }
+
+        &:disabled {
+            background: rgba(var(--color-dark-rgb), 0.2);
+            cursor: not-allowed; 
+        }
     }
 }
 

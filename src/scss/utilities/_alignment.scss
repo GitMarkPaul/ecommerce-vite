@@ -9,6 +9,12 @@ $text-aligns: (
             "right": right,
         ),
     ),
+    "flex-flow": (
+        "prefix": "flex-flow",
+        "values": (
+            "wrap": wrap,
+        ),
+    ),
 );
 
 // Generate Utility Classes

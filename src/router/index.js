@@ -134,6 +134,14 @@ const routes = [
         }
     },
     {
+        path: '/request-for-quotation',
+        name: 'Quotation',
+        component: loadComponent('Quotation'),
+        meta: {
+            title: 'Request for Quotation - Auda Philippines: Online Shopping'
+        }
+    },
+    {
         path: '/categories',
         name: 'Categories',
         component: loadComponent('Categories'),

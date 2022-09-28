@@ -145,3 +145,12 @@
         }
     }
 }
+
+// Thumbnail
+.thumbnail-sm {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color: var(--color-medium);
+}

@@ -107,7 +107,7 @@
                             <a class="nav-link round">New Arrivals</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link round">Long Wallet</a>
+                            <a class="nav-link round">Promotion</a>
                         </li>
                     </ul>
                 </div>

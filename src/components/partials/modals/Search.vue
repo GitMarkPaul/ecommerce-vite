@@ -14,7 +14,7 @@
 								<div class="font-size-18"></div>
 								<div class="form-icon-group">
 									<span class="material-icons-outlined icon-search">search</span>
-									<input type="text" class="form-control round" placeholder="Search products in astra..." autocomplete="search" required autofocus>
+									<input type="text" class="form-control round" placeholder="What are you looking for..." autocomplete="search" required autofocus>
 								</div>
 							</form>
 						</div>

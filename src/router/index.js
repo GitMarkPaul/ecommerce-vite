@@ -46,6 +46,14 @@ const routes = [
         }
     },
     {
+        path: '/manufacturers',
+        name: 'Manufacturers',
+        component: loadComponent('Manufacturers'),
+        meta: {
+            title: 'Manufacturers - Auda Philippines: Online Shopping'
+        }
+    },
+    {
         path: '/product-single/:category/:id',
         name: 'ProductSingle',
         component: loadComponent('ProductSingle'),

@@ -226,6 +226,131 @@
     <section class="padding-top-4">
         <div class="container">
             <div class="row g-4">
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="card">
+                        <div class="body">
+                            <div class="font-size-18 font-weight-600 mb-1 d-flex align-items-center gap-2"><span class="material-icons-outlined">description</span> Dropshipping</div>
+                            <div class="row row-cols-xl-3 g-2">
+                                <div class="col" v-for="product in products.slice(12,15)" :key="product.id">
+                                    <div class="background-accent-medium py-3 px-3 mt-3">
+                                        <img class="thumbnail-sm" :src="product.image" alt="">
+                                        <div class="text-center mt-2">
+                                            <div class="font-size-13 font-weight-600">{{ product.price }}</div>
+                                            <div class="font-size-13 font-weight-500">1 piece</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="card">
+                        <div class="body">
+                            <div class="font-size-18 font-weight-600 mb-1 d-flex align-items-center gap-2"><span class="material-icons-outlined">public</span> Regional specialties</div>
+                            <div class="row row-cols-xl-3 g-2">
+                                <div class="col" v-for="product in products.slice(15,18)" :key="product.id">
+                                    <div class="background-accent-medium py-3 px-3 mt-3">
+                                        <img class="thumbnail-sm" :src="product.image" alt="">
+                                        <div class="text-center mt-2">
+                                            <div class="font-size-13 font-weight-600">{{ product.price }}</div>
+                                            <div class="font-size-13 font-weight-500">1 piece</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="card">
+                        <div class="body">
+                            <div class="font-size-18 font-weight-600 mb-1 d-flex align-items-center gap-2"><span class="material-icons-outlined">trending_up</span> Top ranking</div>
+                            <div class="row row-cols-xl-3 g-2">
+                                <div class="col" v-for="product in products.slice(3,6)" :key="product.id">
+                                    <div class="background-accent-medium py-3 px-3 mt-3">
+                                        <img class="thumbnail-sm" :src="product.image" alt="">
+                                        <div class="text-center mt-2">
+                                            <div class="font-size-13 font-weight-600">{{ product.price }}</div>
+                                            <div class="font-size-13 font-weight-500">1 piece</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 mt-2">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="card">
+                        <div class="body">
+                            <div class="font-size-24 font-weight-600 mb-1">Customizable products</div>
+                            <p class="font-size-16">Provided by 60,000+ experienced manufacturers with design and production capabilities and on-time delivery.</p>
+
+                            <div class="row g-2">
+                                <div class="col-xl-6 col-sm-6">
+                                    <div class="background-accent-medium py-3 px-3">
+                                        <div class="text-center font-size-16 font-weight-600">Source from factories</div>
+                                        <div class="row row-cols-xl-3 g-2 mt-3">
+                                            <div class="col" v-for="product in products.slice(0,3)" :key="product.id">
+                                                <img class="thumbnail-sm" :src="product.image" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-sm-6">
+                                    <div class="background-accent-medium py-3 px-3">
+                                        <div class="text-center font-size-16 font-weight-600">Top-ranking suppliers</div>
+                                        <div class="row row-cols-xl-3 g-2 mt-3">
+                                            <div class="col" v-for="product in products.slice(3,6)" :key="product.id">
+                                                <img class="thumbnail-sm" :src="product.image" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                    <div class="card">
+                        <div class="body">
+                            <div class="font-size-24 font-weight-600 mb-1">Ready-to-ship products</div>
+                            <p class="font-size-16">Source from 15 million products that are ready to ship, and leave the facility within 15 days.</p>
+
+                            <div class="row g-2">
+                                <div class="col-xl-6 col-sm-6">
+                                    <div class="background-accent-medium py-3 px-3">
+                                        <div class="text-center font-size-16 font-weight-600">Fast dispatch</div>
+                                        <div class="row row-cols-xl-3 g-2 mt-3">
+                                            <div class="col" v-for="product in products.slice(6,9)" :key="product.id">
+                                                <img class="thumbnail-sm" :src="product.image" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-sm-6">
+                                    <div class="background-accent-medium py-3 px-3">
+                                        <div class="text-center font-size-16 font-weight-600">Weekly deals</div>
+                                        <div class="row row-cols-xl-3 g-2 mt-3">
+                                            <div class="col" v-for="product in products.slice(9,12)" :key="product.id">
+                                                <img class="thumbnail-sm" :src="product.image" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="padding-top-4">
+        <div class="container">
+            <div class="row g-4">
                 <div class="col-xl-12">
                     <div class="background-accent-danger round p-3">
                         <div class="font-size-24 font-weight-600 d-flex align-items-center"><span class="material-icons-outlined text-color-danger font-size-40">bolt</span> Flash Deals</div>

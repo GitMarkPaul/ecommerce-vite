@@ -43,7 +43,7 @@
                                     <router-link :to="{ name: 'Store' }" class="font-size-16 font-weight-500 text-truncate-2">{{ product.title }}</router-link>
                                     <div class="d-flex align-items-center justify-content-start gap-1 pt-3">
                                         <button type="button" class="button-outline-primary round"><span class="material-icons-outlined">contact_support</span> Inquire</button>
-                                        <button type="button" class="button-accent-primary round"><span class="material-icons-outlined">person_remove</span> Unfollow</button>
+                                        <button type="button" class="button-primary round">Unfollow</button>
                                     </div>
                                 </div>
                             </div>

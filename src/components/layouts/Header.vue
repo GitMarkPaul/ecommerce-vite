@@ -8,12 +8,12 @@
 					</router-link>
 					<div class="form-icon-group margin-left-1 search-form" data-bs-toggle="modal" data-bs-target="#searchForm">
 						<span class="material-icons-outlined icon-search">search</span>
-						<input type="text" class="form-control round" placeholder="Search ...">
+						<input type="text" class="form-control round" placeholder="What are you looking for...">
 					</div>
 				</div>
 				<ul class="nav-menu">
 					<li class="nav-item">
-						<router-link to="/" class="nav-link button-link-dark round">
+						<router-link :to="{ name: 'Manufacturers' }" class="nav-link button-link-dark round">
 							<span class="material-icons-outlined">local_shipping</span>
 							<div class="nav-text">Drop Shipping</div>
 						</router-link>

@@ -56,3 +56,9 @@ $utilities: (
     top: 60px;
     z-index: 1;
 }
+
+.position-sticky-bottom {
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+}

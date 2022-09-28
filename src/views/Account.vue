@@ -15,19 +15,23 @@
 
             <div class="row g-4 pt-2">
                 <div class="col-xl-3 col-lg-3 col-md-4">
-                    <ul class="list-group gap-1 position-sticky-top top-1">
-                        <router-link :to="{ name: 'Account' }" class="list-group-item list-group-item-action active round py-2 px-3 align-items-center d-flex gap-2 border-0"><span class="material-icons-outlined">person</span> My Auda Account</router-link>
-                        <router-link :to="{ name: 'Wishlist' }" class="list-group-item list-group-item-action round py-2 px-3 align-items-center d-flex gap-2 border-0"><span class="material-icons-outlined">favorite_border</span> My Favorites</router-link>
-                        <router-link :to="{ name: 'Following' }" class="list-group-item list-group-item-action round py-2 px-3 align-items-center d-flex gap-2 border-0"><span class="material-icons-outlined">star_border</span> Following</router-link>
-                        <router-link :to="{ name: 'Orders' }" class="list-group-item list-group-item-action round py-2 px-3 align-items-center d-flex gap-2 border-0"><span class="material-icons-outlined">fact_check</span> My Orders</router-link>
-                        <router-link :to="{ name: 'History' }" class="list-group-item list-group-item-action round py-2 px-3 align-items-center d-flex gap-2 border-0"><span class="material-icons-outlined">history</span> Browsing History</router-link>
-                        <router-link :to="{ name: 'Quotation' }" class="list-group-item list-group-item-action round py-2 px-3 align-items-center d-flex gap-2 border-0"><span class="material-icons-outlined">ads_click</span> Request for Quotation</router-link>
-                        <a href="" class="list-group-item list-group-item-action round py-2 px-3 align-items-center d-flex gap-2 border-0"><span class="material-icons-outlined">mail</span> Inquiries</a>
-                        <a href="" class="list-group-item list-group-item-action round py-2 px-3 align-items-center d-flex gap-2 border-0"><span class="material-icons-outlined">contacts</span> Start Selling on Auda</a>
-                        <a href="" class="list-group-item list-group-item-action round py-2 px-3 align-items-center d-flex gap-2 border-0"><span class="material-icons-outlined">language</span> Buyer Central</a>
-                        <router-link :to="{ name: 'ShippingAddress' }" class="list-group-item list-group-item-action round py-2 px-3 align-items-center d-flex gap-2 border-0"><span class="material-icons-outlined">location_on</span> Shipping Addresses</router-link>
-                        <a href="" class="list-group-item list-group-item-action round py-2 px-3 align-items-center d-flex gap-2 border-0"><span class="material-icons-outlined">settings</span> Settings</a>
-                    </ul>
+                    <div class="card position-sticky-top top-1">
+                        <div class="body">
+                            <ul class="list-group gap-1">
+                                <router-link :to="{ name: 'Account' }" class="list-group-item list-group-item-action active round py-2 px-3 align-items-center d-flex gap-2 border-0"><span class="material-icons-outlined">person</span> My Auda Account</router-link>
+                                <router-link :to="{ name: 'Wishlist' }" class="list-group-item list-group-item-action round py-2 px-3 align-items-center d-flex gap-2 border-0"><span class="material-icons-outlined">favorite_border</span> My Favorites</router-link>
+                                <router-link :to="{ name: 'Following' }" class="list-group-item list-group-item-action round py-2 px-3 align-items-center d-flex gap-2 border-0"><span class="material-icons-outlined">star_border</span> Following</router-link>
+                                <router-link :to="{ name: 'Orders' }" class="list-group-item list-group-item-action round py-2 px-3 align-items-center d-flex gap-2 border-0"><span class="material-icons-outlined">fact_check</span> My Orders</router-link>
+                                <router-link :to="{ name: 'History' }" class="list-group-item list-group-item-action round py-2 px-3 align-items-center d-flex gap-2 border-0"><span class="material-icons-outlined">history</span> Browsing History</router-link>
+                                <router-link :to="{ name: 'Quotation' }" class="list-group-item list-group-item-action round py-2 px-3 align-items-center d-flex gap-2 border-0"><span class="material-icons-outlined">ads_click</span> Request for Quotation</router-link>
+                                <a href="" class="list-group-item list-group-item-action round py-2 px-3 align-items-center d-flex gap-2 border-0"><span class="material-icons-outlined">mail</span> Inquiries</a>
+                                <a href="" class="list-group-item list-group-item-action round py-2 px-3 align-items-center d-flex gap-2 border-0"><span class="material-icons-outlined">contacts</span> Start Selling on Auda</a>
+                                <a href="" class="list-group-item list-group-item-action round py-2 px-3 align-items-center d-flex gap-2 border-0"><span class="material-icons-outlined">language</span> Buyer Central</a>
+                                <router-link :to="{ name: 'ShippingAddress' }" class="list-group-item list-group-item-action round py-2 px-3 align-items-center d-flex gap-2 border-0"><span class="material-icons-outlined">location_on</span> Shipping Addresses</router-link>
+                                <a href="" class="list-group-item list-group-item-action round py-2 px-3 align-items-center d-flex gap-2 border-0"><span class="material-icons-outlined">settings</span> Settings</a>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-xl-9 col-lg-9 col-md-8">
                     <div class="row g-3">

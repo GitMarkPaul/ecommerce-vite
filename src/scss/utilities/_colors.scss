@@ -36,3 +36,7 @@ $mp-theme-colors: (
         background: rgba(var(--color-#{$color}-rgb), 0.15);
     }
 }
+
+.background-none {
+    background: transparent !important;
+}

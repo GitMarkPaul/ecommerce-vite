@@ -14,7 +14,7 @@
 </script>
 
 <template>
-    <section class="pt-2 padding-bottom-3">
+    <section class="padding-bottom-3">
         <div class="container">
             <div class="bread">
                 <ol class="bread-menu">
@@ -217,7 +217,7 @@
                                     <div class="d-flex gap-2 float-end">
                                         <button class="button-outline-dark circle"><span class="material-icons-outlined">favorite_border</span></button>
                                         <button class="button-outline-dark round">Chat now</button>
-                                        <button class="button-outline-dark round">Contact us</button>
+                                        <router-link :to="{ name: 'ContactSupplier' }" class="button-outline-dark round">Contact us</router-link>
                                     </div>
                                 </div>
                             </div>

@@ -38,9 +38,11 @@ input[type=date] {
 }
 
 select {
+    background: var(--color-light);
     color: var(--color-dark);
     
     option {
+        color: var(--color-dark);
         height: 100px;
     }
 }

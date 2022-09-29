@@ -7,7 +7,7 @@ $default-transition: all 0.2s ease !default;
         border-bottom: $default-border;
         background: rgba(var(--card-background-rgb), 0.99);
         backdrop-filter: blur(8px);
-        position: fixed;
+        position: sticky;
         top: 0; 
         display: flex;
         align-items: center;
@@ -96,8 +96,7 @@ $default-transition: all 0.2s ease !default;
     main { 
         transition: $default-transition;
         height: 100%;
-        margin-top: 3.7rem;
-        margin-bottom: 3.7rem;
+        margin-bottom: 2rem;
 
         .container {
             @media (max-width: 1024px) and (min-width: 768px) {

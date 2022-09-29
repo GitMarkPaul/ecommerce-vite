@@ -14,7 +14,7 @@
 </script>
 
 <template>
-    <section class="pt-2">
+    <section>
         <div class="container">
             <div class="bread">
                 <ol class="bread-menu">

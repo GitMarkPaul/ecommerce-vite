@@ -14,7 +14,7 @@
 </script>
 
 <template>
-    <section class="pt-2 padding-bottom-3">
+    <section class="padding-bottom-3">
         <div class="container">
             <div class="bread">
                 <ol class="bread-menu">

@@ -56,6 +56,24 @@ $mp-theme-colors: (
             cursor: not-allowed; 
         }
     }
+
+    .button-fab-#{$color}-bottom {
+        position: fixed;
+        bottom: 0;
+        @extend %button-defaults;
+        background: var(--color-#{$color});
+        color: var(--color-#{$color}-contrast) !important;
+        z-index: 2;
+
+        &:hover {
+            background: var(--color-#{$color}-tint);
+        }
+
+        i {
+            font-size: 21px;
+            color: var(--color-#{$color}-contrast);
+        }
+    }
 }
 
 @each $color, $value in $mp-theme-colors {

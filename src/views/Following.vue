@@ -14,7 +14,7 @@
 </script>
 
 <template>
-    <section class="pt-2 padding-bottom-3">
+    <section class="padding-bottom-3">
         <div class="container">
             <div class="bread">
                 <ol class="bread-menu">
@@ -42,7 +42,7 @@
                                 <div class="cart-details">
                                     <router-link :to="{ name: 'Store' }" class="font-size-16 font-weight-500 text-truncate-2">{{ product.title }}</router-link>
                                     <div class="d-flex align-items-center justify-content-start gap-1 pt-3">
-                                        <button type="button" class="button-outline-primary round"><span class="material-icons-outlined">contact_support</span> Inquire</button>
+                                        <router-link :to="{ name: 'ContactSupplier' }" class="button-outline-primary round"><span class="material-icons-outlined">contact_support</span> Inquire</router-link>
                                         <button type="button" class="button-primary round">Unfollow</button>
                                     </div>
                                 </div>

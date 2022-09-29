@@ -1,5 +1,5 @@
 <template>
-    <section class="pt-2 padding-bottom-3">
+    <section class="padding-bottom-3">
         <div class="container">
             <div class="d-flex align-items-center justify-content-between flex-flow-wrap gap-2">
                 <div class="bread">

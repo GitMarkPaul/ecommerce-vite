@@ -5,6 +5,14 @@ const loadComponent = (view) => {
 }
 
 const routes = [
+    { 
+        path: "/:pathMatch(.*)*",
+        name: "404", 
+        component: loadComponent('404'),
+        meta: {
+            title: 'Page Not Found'
+        }  
+    },
     {
         path: '/',
         name: 'Home',
@@ -19,6 +27,14 @@ const routes = [
         component: loadComponent('Account'),
         meta: {
             title: 'Account - Auda Philippines: Online Shopping'
+        }
+    },
+    {
+        path: '/edit-profile',
+        name: 'EditProfile',
+        component: loadComponent('EditProfile'),
+        meta: {
+            title: 'Edit Profile - Auda Philippines: Online Shopping'
         }
     },
     {
@@ -180,19 +196,29 @@ const routes = [
         meta: {
             title: 'Auda Chat - Auda Philippines: Online Shopping'
         }
+    },
+    {
+        path: '/contact-supplier',
+        name: 'ContactSupplier',
+        component: loadComponent('ContactSupplier'),
+        meta: {
+            title: 'Contact Supplier - Auda Philippines: Online Shopping'
+        }
+    },
+    {
+        path: '/password',
+        name: 'Password',
+        component: loadComponent('Password'),
+        meta: {
+            title: 'Password - Auda Philippines: Online Shopping'
+        }
     }
 ]
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
-    scrollBehavior(to, from, savedPosition) {
-        // always scroll 10px above the element #main
-        return {
-          // could also be
-          // el: document.getElementById('main'),
-            el: '#app',
-            top: 200,
-        }
+    scrollBehavior() {
+        document.getElementById('app').scrollIntoView({ behavior: 'smooth' });
     },
     routes
 })

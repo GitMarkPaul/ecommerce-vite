@@ -1,5 +1,5 @@
 <template>
-    <section class="pt-2 padding-bottom-3">
+    <section class="padding-bottom-3">
         <div class="container">
             <div class="bread">
                 <ol class="bread-menu">
@@ -28,7 +28,7 @@
                                 <a href="" class="list-group-item list-group-item-action round py-2 px-3 align-items-center d-flex gap-2 border-0"><span class="material-icons-outlined">contacts</span> Start Selling on Auda</a>
                                 <a href="" class="list-group-item list-group-item-action round py-2 px-3 align-items-center d-flex gap-2 border-0"><span class="material-icons-outlined">language</span> Buyer Central</a>
                                 <router-link :to="{ name: 'ShippingAddress' }" class="list-group-item list-group-item-action round py-2 px-3 align-items-center d-flex gap-2 border-0"><span class="material-icons-outlined">location_on</span> Shipping Addresses</router-link>
-                                <a href="" class="list-group-item list-group-item-action round py-2 px-3 align-items-center d-flex gap-2 border-0"><span class="material-icons-outlined">settings</span> Settings</a>
+                                <router-link :to="{ name: 'Password' }" class="list-group-item list-group-item-action round py-2 px-3 align-items-center d-flex gap-2 border-0"><span class="material-icons-outlined">settings</span> Settings</router-link>
                             </ul>
                         </div>
                     </div>
@@ -57,7 +57,7 @@
                                             <div class="badge background-color-success round"><span class="material-icons-outlined">verified</span> Verified</div>
                                         </div>
                                         <div class="col-xl-2 col-lg-3 col-md-3 d-flex gap-2">
-                                            <button type="button" class="button-accent-primary block round"><span class="material-icons-outlined">edit</span> Edit</button>
+                                            <router-link :to="{ name: 'EditProfile' }" class="button-accent-primary block round"><span class="material-icons-outlined">edit</span> Edit</router-link>
                                         </div>
                                     </div>
 

@@ -223,7 +223,7 @@
         </div>
     </section>
 
-    <section class="padding-top-4">
+    <section class="padding-top-2">
         <div class="container">
             <div class="row g-4">
                 <div class="col-xl-4 col-lg-4 col-md-6">
@@ -281,7 +281,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row g-4 mt-2">
+            <div class="row g-4 mt-1">
                 <div class="col-xl-6 col-lg-6">
                     <div class="card">
                         <div class="body">
@@ -348,7 +348,7 @@
         </div>
     </section>
 
-    <section class="padding-top-4">
+    <section class="padding-top-3">
         <div class="container">
             <div class="row g-4">
                 <div class="col-xl-12">
@@ -373,7 +373,7 @@
         </div>
     </section>
 
-    <section class="padding-top-4">
+    <section class="padding-top-3">
         <div class="container">
             <div class="row g-4">
                 <div class="col-xl-12">
@@ -400,7 +400,7 @@
         </div>
     </section>
 
-    <section class="padding-top-4">
+    <section class="padding-top-3">
         <div class="container">
             <div class="d-flex align-items-center justify-content-between">
                 <div class="font-size-24 font-weight-600">Best Selling Products</div>
@@ -425,7 +425,7 @@
         </div>
     </section>
 
-    <section class="padding-top-4 padding-bottom-3">
+    <section class="padding-top-3 padding-bottom-3">
         <div class="container">
             <div class="d-flex align-items-center justify-content-between">
                 <div class="font-size-24 font-weight-600">Products for you</div>

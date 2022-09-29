@@ -14,7 +14,7 @@
 </script>
 
 <template>
-    <section class="pt-2 padding-bottom-3">
+    <section class="padding-bottom-3">
         <div class="container">
             <div class="bread">
                 <ol class="bread-menu">
@@ -121,7 +121,7 @@
                                             <div class="form-text">Product images or files lead to more accurate quotes.</div>
                                         </div>
                                     </div>
-                                    <div class="col-xl-12">
+                                    <div class="col-xl-12 position-sticky-bottom background-color-light py-3">
                                         <button type="submit" class="button-primary round md" id="submit-button" disabled>Submit</button>
                                     </div>
                                 </div>

@@ -138,6 +138,11 @@
             </div>
         </div>
     </section>
+
+    <div class="position-fixed bottom-0 py-4 d-flex gap-2 background-color-light w-100 justify-content-center">
+        <button class="button-primary round md"><span class="material-icons-outlined">mail</span> Contact Supplier</button>
+        <button class="button-warning round md"><span class="material-icons-outlined">chat</span>Chat Now</button>
+    </div>
 </template>
 
 <style>

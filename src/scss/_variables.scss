@@ -74,66 +74,66 @@
     // Font
     --font-serif: 'Inter', sans-serif;
 
-    --body-background: #fafafa;
+    --body-background: #fdfdfd;
     --card-background: #ffffff;
     --card-background-rgb: 255,255,255;
 }
 
-@media (prefers-color-scheme: dark) {
-    body img {
-        filter: brightness(.8) contrast(1.2);
-    }
+// @media (prefers-color-scheme: dark) {
+//     body img {
+//         filter: brightness(.8) contrast(1.2);
+//     }
 
-    body .brand-logo, .btn-close {
-        filter: brightness(0) invert(0.9);
-    }
+//     body .brand-logo, .btn-close {
+//         filter: brightness(0) invert(0.9);
+//     }
 
-    body {
-        // Dark 
-        --color-dark: #e6e6e6;
-        --color-dark-rgb: 244,245,248;
-        --color-dark-contrast: #000000;
-        --color-dark-contrast-rgb: 0,0,0;
-        --color-dark-shade: #d7d8da;
-        --color-dark-tint: #f5f6f9;
+//     body {
+//         // Dark 
+//         --color-dark: #e6e6e6;
+//         --color-dark-rgb: 244,245,248;
+//         --color-dark-contrast: #000000;
+//         --color-dark-contrast-rgb: 0,0,0;
+//         --color-dark-shade: #d7d8da;
+//         --color-dark-tint: #f5f6f9;
 
-        // Secondary
-        --color-secondary: #414141;
-        --color-secondary-rgb: 65,65,65;
-        --color-secondary-contrast: #ffffff;
-        --color-secondary-contrast-rgb: 255,255,255;
-        --color-secondary-shade: #393939;
-        --color-secondary-tint: #545454;
+//         // Secondary
+//         --color-secondary: #414141;
+//         --color-secondary-rgb: 65,65,65;
+//         --color-secondary-contrast: #ffffff;
+//         --color-secondary-contrast-rgb: 255,255,255;
+//         --color-secondary-shade: #393939;
+//         --color-secondary-tint: #545454;
 
-        // Danger
-        --color-danger: #b3261e;
-        --color-danger-rgb: 179,38,30;
-        --color-danger-contrast: #ffffff;
-        --color-danger-contrast-rgb: 255,255,255;
-        --color-danger-shade: #9e211a;
-        --color-danger-tint: #bb3c35;
+//         // Danger
+//         --color-danger: #b3261e;
+//         --color-danger-rgb: 179,38,30;
+//         --color-danger-contrast: #ffffff;
+//         --color-danger-contrast-rgb: 255,255,255;
+//         --color-danger-shade: #9e211a;
+//         --color-danger-tint: #bb3c35;
 
-        // Medium
-        --color-medium: #78797b;
-        --color-medium-rgb: 152,154,162;
-        --color-medium-contrast: #ffffff;
-        --color-medium-contrast-rgb: 0,0,0;
-        --color-medium-shade: #86888f;
-        --color-medium-tint: #a2a4ab;
+//         // Medium
+//         --color-medium: #78797b;
+//         --color-medium-rgb: 152,154,162;
+//         --color-medium-contrast: #ffffff;
+//         --color-medium-contrast-rgb: 0,0,0;
+//         --color-medium-shade: #86888f;
+//         --color-medium-tint: #a2a4ab;
 
-        // Light
-        --color-light: #2b2a2a;
-        --color-light-rgb: 37,38,39;
-        --color-light-contrast: #ffffff;
-        --color-light-contrast-rgb: 255,255,255;
-        --color-light-shade: #212122;
-        --color-light-tint: #222529;
+//         // Light
+//         --color-light: #2b2a2a;
+//         --color-light-rgb: 37,38,39;
+//         --color-light-contrast: #ffffff;
+//         --color-light-contrast-rgb: 255,255,255;
+//         --color-light-shade: #212122;
+//         --color-light-tint: #222529;
 
-        --body-background: #2b2a2a;
-        --card-background: #222529;
-        --card-background-rgb: 34, 37, 41;
-    }
-}
+//         --body-background: #2b2a2a;
+//         --card-background: #222529;
+//         --card-background-rgb: 34, 37, 41;
+//     }
+// }
 
 
 // Fonts

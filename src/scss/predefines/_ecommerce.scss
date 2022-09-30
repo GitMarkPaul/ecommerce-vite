@@ -23,7 +23,7 @@ $default-transition: all 0.2s ease !default;
             width: 100%;
 
             .brand-logo {
-                width: 100px;
+                width: 120px;
             }
 
             .nav-btn-toggler {
@@ -56,9 +56,7 @@ $default-transition: all 0.2s ease !default;
 
                 .nav-item {
                     .nav-link {
-                        font-size: 16px;
-
-                        .nav-text {
+                        .nav-text-none {
                             display: none;
 
                             @media (max-width: 768px) {

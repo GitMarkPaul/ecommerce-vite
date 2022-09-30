@@ -88,10 +88,10 @@
                                             </div>
                                             <div class="d-flex align-items-center justify-content-between gap-2 mt-3">
                                                 <div class="font-size-14 font-weight-600 text-color-success d-flex align-items-center gap-2"><span class="material-symbols-rounded text-color-success">local_shipping</span> Parcel has been delivered</div>
-                                                <router-link :to="{ name: 'OrderDetails' }" class="button-accent-success round">View <span class="material-icons-outlined">navigate_next</span></router-link>
+                                                <router-link :to="{ name: 'OrderTracking' }" class="button-accent-success round">View <span class="material-icons-outlined">navigate_next</span></router-link>
                                             </div>
                                             <div class="d-flex align-items-center justify-content-end mt-3">
-                                                <button type="button" class="button-outline-primary round md">Write review</button>
+                                                <router-link :to="{ name: 'Review' }" class="button-outline-primary round md">Write review</router-link>
                                             </div>
                                         </div>
                                     </div>

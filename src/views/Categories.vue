@@ -21,7 +21,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/mens-apparel.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/mens-apparel.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Men's Apparell</div>
                             </div>
@@ -33,7 +33,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/mobile-gadgets.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/mobile-gadgets.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Mobile & Gadgets</div>
                             </div>
@@ -45,7 +45,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/mobile-accessories.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/mobile-accessories.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Mobiles Accessories</div>
                             </div>
@@ -57,7 +57,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/home-entertainment.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/home-entertainment.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Home Entertainment</div>
                             </div>
@@ -69,7 +69,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/babies-kids.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/babies-kids.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Babies & Kids</div>
                             </div>
@@ -81,7 +81,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/home-living.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/home-living.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Home & Living</div>
                             </div>
@@ -93,7 +93,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/groceries.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/groceries.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Groceries</div>
                             </div>
@@ -105,7 +105,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/womens-bag.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/womens-bag.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Women's Bags</div>
                             </div>
@@ -117,7 +117,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/womens-accessories.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/womens-accessories.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Women Accessories</div>
                             </div>
@@ -129,7 +129,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/womens-apparel.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/womens-apparel.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Women's Apparel</div>
                             </div>
@@ -141,7 +141,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/health-personal-care.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/health-personal-care.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Health & Personal Care</div>
                             </div>
@@ -153,7 +153,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/makeup-fragrances.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/makeup-fragrances.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Makeup & Fragrances</div>
                             </div>
@@ -165,7 +165,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/home-appliances.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/home-appliances.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Home Appliances</div>
                             </div>
@@ -177,7 +177,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/laptops-computers.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/laptops-computers.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Laptops & Computers</div>
                             </div>
@@ -189,7 +189,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/cameras.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/cameras.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Cameras</div>
                             </div>
@@ -201,7 +201,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/sports-travel.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/sports-travel.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Sports & Travel</div>
                             </div>
@@ -213,7 +213,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/mens-bags-accessories.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/mens-bags-accessories.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Men's Bags & Accessories</div>
                             </div>
@@ -225,7 +225,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/men-shoes.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/men-shoes.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Men Shoes</div>
                             </div>
@@ -237,7 +237,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/motors.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/motors.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Motors</div>
                             </div>
@@ -249,7 +249,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/pet-care.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/pet-care.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Pet Care</div>
                             </div>
@@ -261,7 +261,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/gaming.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/gaming.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Gaming</div>
                             </div>
@@ -273,7 +273,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/audio.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/audio.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Audio</div>
                             </div>
@@ -285,7 +285,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/hobbies-stationary.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/hobbies-stationary.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Hobbies & Stationaries</div>
                             </div>
@@ -297,7 +297,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/toys-games-collectibles.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/toys-games-collectibles.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Toys, Games, & Collectibles</div>
                             </div>

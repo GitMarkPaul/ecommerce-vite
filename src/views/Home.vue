@@ -20,7 +20,7 @@
 
 <template>
     <section class="padding-top-2">
-        <div class="container">
+        <div class="container-fluid">
             <swiper
                 :slides-per-view="1"
                 :space-between="50">
@@ -68,7 +68,7 @@
     </section>
 
     <section class="padding-top-2">
-        <div class="container">
+        <div class="container-fluid">
             <div class="d-flex align-items-center justify-content-between">
                 <div class="font-size-24 font-weight-600">Shop by Store Category</div>
                 <router-link to="/categories" class="button-accent-primary round">See more <span class="material-icons-outlined">east</span></router-link>
@@ -92,7 +92,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/mobile-gadgets.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/mobile-gadgets.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Mobile & Gadgets</div>
                             </div>
@@ -104,7 +104,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/mobile-accessories.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/mobile-accessories.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Mobiles Accessories</div>
                             </div>
@@ -116,7 +116,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/home-entertainment.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/home-entertainment.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Home Entertainment</div>
                             </div>
@@ -128,7 +128,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/babies-kids.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/babies-kids.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Babies & Kids</div>
                             </div>
@@ -140,7 +140,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/home-living.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/home-living.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Home & Living</div>
                             </div>
@@ -152,7 +152,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/groceries.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/groceries.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Groceries</div>
                             </div>
@@ -164,7 +164,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/womens-bag.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/womens-bag.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Women's Bags</div>
                             </div>
@@ -176,7 +176,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/womens-accessories.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/womens-accessories.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Women Accessories</div>
                             </div>
@@ -188,7 +188,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/womens-apparel.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/womens-apparel.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Women's Apparel</div>
                             </div>
@@ -200,7 +200,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/health-personal-care.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/health-personal-care.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Health & Personal Care</div>
                             </div>
@@ -212,7 +212,7 @@
                         <div class="card hover-scale-1 round text-center h-100">
                             <div class="body">
                                 <div class="initial-circle-lg">
-                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/makeup-fragrances.png" width="100%" alt="" />
+                                    <img class="hover-img-scale-1" src="../assets/placeholders/categories/makeup-fragrances.png" width="100%" height="100%" alt="" />
                                 </div>
                                 <div class="font-size-16 font-weight-600 mt-2">Makeup & Fragrances</div>
                             </div>
@@ -224,7 +224,7 @@
     </section>
 
     <section class="padding-top-2">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row g-4">
                 <div class="col-xl-4 col-lg-4 col-md-6">
                     <div class="card">
@@ -349,7 +349,7 @@
     </section>
 
     <section class="padding-top-3">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row g-4">
                 <div class="col-xl-12">
                     <div class="background-accent-danger round p-3">
@@ -374,7 +374,7 @@
     </section>
 
     <section class="padding-top-3">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row g-4">
                 <div class="col-xl-12">
                     <div class="background-accent-primary round p-3">
@@ -401,7 +401,7 @@
     </section>
 
     <section class="padding-top-3">
-        <div class="container">
+        <div class="container-fluid">
             <div class="d-flex align-items-center justify-content-between">
                 <div class="font-size-24 font-weight-600">Best Selling Products</div>
                 <router-link to="/" class="button-accent-primary round">See more <span class="material-icons-outlined">east</span></router-link>
@@ -426,13 +426,13 @@
     </section>
 
     <section class="padding-top-3 padding-bottom-3">
-        <div class="container">
+        <div class="container-fluid">
             <div class="d-flex align-items-center justify-content-between">
                 <div class="font-size-24 font-weight-600">Products for you</div>
                 <router-link to="/products" class="button-accent-primary round">See more <span class="material-icons-outlined">east</span></router-link>
             </div>
-            <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-3 row-cols-2 g-3 mt-2">
-                <div class="col" v-for="product in products.slice(5,20)" :key="product.id">
+            <div class="row row-cols-xl-6 row-cols-lg-4 row-cols-md-3 row-cols-sm-3 row-cols-2 g-3 mt-2">
+                <div class="col" v-for="product in products.slice(2,20)" :key="product.id">
                     <div class="card round hover-scale-1 h-100">
                         <router-link :to="{ name: 'ProductSingle', params: { category: product.category, id: product.id } }">
                             <img class="card-product-img" loading="lazy" :src="product.image" alt="" />

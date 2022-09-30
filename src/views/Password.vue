@@ -10,6 +10,9 @@
                         <router-link :to="{ name: 'Account' }" class="bread-link">Account</router-link>
                     </li>
                     <li class="bread-item">
+                        <router-link :to="{ name: 'Settings' }" class="bread-link">Settings</router-link>
+                    </li>
+                    <li class="bread-item">
                         <div class="bread-link" aria-current="page">Password</div>
                     </li>
                 </ol>

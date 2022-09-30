@@ -136,16 +136,20 @@
                     </div>
                 </div>
             </div>
+
+            <div class="position-sticky-bottom py-2 px-2 d-flex background-color-light gap-2 w-100 justify-content-center floating-window mt-4">
+                <router-link :to="{ name: 'ContactSupplier' }" class="button-primary round"><span class="material-icons-outlined">mail</span> Contact Supplier</router-link>
+                <router-link :to="{ name: 'Chat' }" class="button-warning round"><span class="material-icons-outlined">chat</span>Chat Now</router-link>
+            </div>
         </div>
     </section>
 
-    <div class="position-fixed bottom-0 py-4 d-flex gap-2 background-color-light w-100 justify-content-center">
-        <button class="button-primary round md"><span class="material-icons-outlined">mail</span> Contact Supplier</button>
-        <button class="button-warning round md"><span class="material-icons-outlined">chat</span>Chat Now</button>
-    </div>
 </template>
 
-<style>
+<style scoped>
+    .floating-window {
+        z-index: 1;
+    }
     .header {
         background-image: url('../assets/footer.svg');
     }

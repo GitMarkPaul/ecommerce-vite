@@ -22,6 +22,30 @@ const routes = [
         }
     },
     {
+        path: '/settings',
+        name: 'Settings',
+        component: loadComponent('Settings'),
+        meta: {
+            title: 'Settings - Auda Philippines: Online Shopping'
+        }
+    },
+    {
+        path: '/language',
+        name: 'Language',
+        component: loadComponent('Language'),
+        meta: {
+            title: 'Language - Auda Philippines: Online Shopping'
+        }
+    },
+    {
+        path: '/contact-us',
+        name: 'ContactUs',
+        component: loadComponent('ContactUs'),
+        meta: {
+            title: 'Contact Us - Auda Philippines: Online Shopping'
+        }
+    },
+    {
         path: '/account',
         name: 'Account',
         component: loadComponent('Account'),
@@ -118,6 +142,14 @@ const routes = [
         }
     },
     {
+        path: '/order-tracking',
+        name: 'OrderTracking',
+        component: loadComponent('OrderTracking'),
+        meta: {
+            title: 'Order Tracking - Auda Philippines: Online Shopping'
+        }
+    },
+    {
         path: '/store',
         name: 'Store',
         component: loadComponent('Store'),
@@ -211,6 +243,22 @@ const routes = [
         component: loadComponent('Password'),
         meta: {
             title: 'Password - Auda Philippines: Online Shopping'
+        }
+    },
+    {
+        path: '/review',
+        name: 'Review',
+        component: loadComponent('Review'),
+        meta: {
+            title: 'Review - Auda Philippines: Online Shopping'
+        }
+    },
+    {
+        path: '/vouchers',
+        name: 'Vouchers',
+        component: loadComponent('Vouchers'),
+        meta: {
+            title: 'Vouchers - Auda Philippines: Online Shopping'
         }
     }
 ]

@@ -216,7 +216,7 @@
                                 <div class="col-xl-6 col-md-6">
                                     <div class="d-flex gap-2 float-end">
                                         <button class="button-outline-dark circle"><span class="material-icons-outlined">favorite_border</span></button>
-                                        <button class="button-outline-dark round">Chat now</button>
+                                        <router-link :to="{ name: 'Chat' }" class="button-outline-dark round">Chat now</router-link>
                                         <router-link :to="{ name: 'ContactSupplier' }" class="button-outline-dark round">Contact us</router-link>
                                     </div>
                                 </div>

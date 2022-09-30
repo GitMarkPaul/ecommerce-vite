@@ -1,6 +1,6 @@
 <template>
     <header>
-		<div class="container">
+		<div class="container-fluid">
 			<nav class="navbar-nav">
 				<div class="d-flex align-items-center gap-2">
 					<router-link to="/">
@@ -15,32 +15,32 @@
 					<li class="nav-item">
 						<router-link :to="{ name: 'Manufacturers' }" class="nav-link button-link-dark round">
 							<span class="material-icons-outlined">local_shipping</span>
-							<div class="nav-text">Drop Shipping</div>
+							<div class="nav-text-none">Drop Shipping</div>
 						</router-link>
 					</li>
 					<li class="nav-item">
 						<router-link to="/shopping-cart" class="nav-link button-link-dark round" data-badge="3">
 							<span class="material-icons-outlined">shopping_bag</span>
-							<div class="nav-text">Shopping Cart</div>
+							<div class="nav-text-none">Shopping Cart</div>
 						</router-link>
 					</li>
 					<li class="nav-item">
 						<router-link to="/wishlist" class="nav-link button-link-dark round" data-badge="1">
 							<span class="material-icons-outlined">favorite_border</span>
-							<div class="nav-text">Wishlist</div>
+							<div class="nav-text-none">Wishlist</div>
 						</router-link>
 					</li>
 					<li class="nav-item">
 						<router-link :to="{ name: 'Chat' }" class="nav-link button-link-dark round" data-badge="9+">
 							<span class="material-icons-outlined">chat</span>
-							<div class="nav-text">Messages</div>
+							<div class="nav-text-none">Messages</div>
 						</router-link>
 					</li>
 					<li class="nav-item">
-						<a class="button-accent-primary round" data-bs-toggle="offcanvas" data-bs-target="#offcanvasInterests" aria-controls="offcanvasInterests">
-							<span class="material-icons-outlined">interests</span>
-							<div class="nav-text">Interest</div>
-						</a>
+						<router-link :to="{ name: 'Manufacturers' }" class="nav-link button-accent-dark round">
+							<span class="material-icons-outlined">factory</span>
+							<div class="nav-text">Manufacturers</div>
+						</router-link>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="button-accent-dark round" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -59,14 +59,14 @@
 								</router-link>
 							</li>
 							<li>
-								<a class="dropdown-item" href="settings.html">
+								<router-link :to="{ name: 'Settings' }" class="dropdown-item">
 									Settings
-								</a>
+								</router-link>
 							</li>
 							<li>
-								<a class="dropdown-item" href="#">
+								<router-link :to="{ name: 'ContactUs' }" class="dropdown-item">
 									Contact Support
-								</a>
+								</router-link>
 							</li>
 							<li>
 								<router-link :to="{ name: 'History' }" class="dropdown-item">

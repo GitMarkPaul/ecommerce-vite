@@ -65,7 +65,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <a href="" class="button-link-primary round">View</a>
+                                        <router-link :to="{ name: 'OrderTracking' }" class="button-link-primary round">View</router-link>
                                     </div>
 
                                     <div class="d-flex justify-content-between gap-2 mt-4">

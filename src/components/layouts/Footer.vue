@@ -1,7 +1,7 @@
 <template>
     <footer class="background-overlay">
-		<div class="container">
-			<div class="row row-cols-xl-4 row-cols-md-4 row-cols-sm-2 row-cols-1 g-5 position-relative">
+		<div class="container-fluid">
+			<div class="row row-cols-xl-5 row-cols-md-4 row-cols-sm-2 row-cols-1 g-5 position-relative">
 				<div class="col">
 					<div class="font-size-16 font-weight-600">Customer Service</div>
 					<ul class="footer-menu">
@@ -10,7 +10,7 @@
 						<li><a href="" class="footer-link">Free Shipping</a></li>
 						<li><a href="" class="footer-link">Return & Refund</a></li>
 						<li><a href="" class="footer-link">Auda Guarantee</a></li>
-						<li><a href="" class="footer-link">Contact Us</a></li>
+						<li><router-link :to="{ name: 'ContactUs' }" class="footer-link">Contact Us</router-link></li>
 					</ul>
 				</div>
 				<div class="col">
@@ -21,7 +21,6 @@
 						<li><a href="" class="footer-link">Auda Careers</a></li>
 						<li><a href="" class="footer-link">Auda Policies</a></li>
 						<li><a href="" class="footer-link">Privacy Policy</a></li>
-						<li><a href="" class="footer-link">Seller Center</a></li>
 					</ul>
 				</div>
 				<div class="col">
@@ -33,6 +32,15 @@
 						<li><a href="" class="footer-link">Debit/Credit Card</a></li>
 						<li><a href="" class="footer-link">Stripe</a></li>
 						<li><a href="" class="footer-link">Auda Pay</a></li>
+					</ul>
+				</div>
+				<div class="col">
+					<div class="font-size-16 font-weight-600">Sell on Auda</div>
+					<ul class="footer-menu">
+						<li><a href="" class="footer-link">Supplier Membership</a></li>
+						<li><a href="" class="footer-link">Learning Center</a></li>
+						<li><a href="" class="footer-link">Partner Program</a></li>
+						<li><a href="" class="footer-link">Seller Center</a></li>
 					</ul>
 				</div>
 				<div class="col">

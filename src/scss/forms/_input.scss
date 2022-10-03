@@ -90,23 +90,29 @@ label, .form-label {
     }
 }
 
-.form-check-input {
-    transition: all 0.2s ease;
-    background-color: var(--color-medium);
-	cursor: pointer;
-	padding: 0.5rem;
-    width: 1.3em;
-    height: 1.3em;
+.form-check {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
 
-	&:focus {
-        outline: none;
-        box-shadow: none;
+    .form-check-input {
+        transition: all 0.2s ease;
+        background-color: var(--color-medium);
+        cursor: pointer;
+        padding: 0.5rem;
+        width: 1.2em;
+        height: 1.2em;
+    
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    
+        &:checked {
+            background-color: var(--color-primary);
+            border-color: var(--color-primary);
+        }
     }
-
-	&:checked {
-		background-color: var(--color-primary);
-		border-color: var(--color-primary);
-	}
 }
 
 .form-switch .form-check-input {

@@ -1,7 +1,7 @@
 <template>
-    <footer class="background-overlay">
+    <footer>
 		<div class="container-fluid">
-			<div class="row row-cols-xl-5 row-cols-md-4 row-cols-sm-2 row-cols-1 g-5 position-relative">
+			<div class="row row-cols-xl-5 row-cols-md-4 row-cols-sm-2 row-cols-1 g-5">
 				<div class="col">
 					<div class="font-size-16 font-weight-600">Customer Service</div>
 					<ul class="footer-menu">
@@ -54,7 +54,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="footer-bottom position-relative py-3">
+			<div class="footer-bottom py-3">
 				<div>Copyright &copy; 2022. GOCLOUD Inc. All rights reserved.</div>
 			</div>
 		</div>
@@ -62,7 +62,7 @@
 </template>
 
 <style lang="scss">
-    footer {
-        background-image: url('../../assets/footer.svg'); //WORKED!
-    }
+    // footer {
+    //     background-image: url('../../assets/footer.svg'); //WORKED!
+    // }
 </style>

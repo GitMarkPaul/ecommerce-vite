@@ -9,6 +9,7 @@
 	import Delete from './components/partials/modals/Delete.vue'
 	import DebitCredit from './components/partials/modals/DebitCredit.vue'
 	import AudaPay from './components/partials/modals/AudaPay.vue'
+	import FabChat from './components/FabChat.vue'
 </script>
 
 <template>
@@ -18,6 +19,9 @@
 	<Main></Main>
 
 	<Footer></Footer>
+
+	<!-- Fab Chat -->
+	<FabChat></FabChat>
 
 	<!-- Offcanvas -->
 	<Interest></Interest>

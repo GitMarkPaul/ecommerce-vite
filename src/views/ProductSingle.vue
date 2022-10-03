@@ -69,7 +69,7 @@
 
 <template>
     <section>
-        <div class="container">
+        <div class="container-fluid">
             <div class="bread">
                 <ol class="bread-menu">
                     <li class="bread-item">
@@ -86,7 +86,7 @@
                     </li>
                 </ol>
             </div>
-            <div class="row g-5 pt-2">
+            <div class="row g-4 pt-2">
                 <div class="col-xl-12">
                     <div class="card">
                         <div class="body">
@@ -96,6 +96,11 @@
                                         <div class="item w-100 mb-3">
                                             <img class="product-image round" :src="productSingle.image" alt="">
                                         </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between gap-3 mt-2">
+                                        <button type="button" class="button-link-dark round"><span class="material-icons-outlined">favorite_border</span> Add to wishlist</button>
+                                        <button type="button" class="button-link-dark round"><span class="material-icons-outlined">share</span> Share</button>
                                     </div>
                                 </div>
                                 <div class="col-xl-5 col-lg-8 col-md-8">
@@ -140,11 +145,6 @@
                                     <div class="d-flex gap-3 mt-4">
                                         <button type="button" class="button-accent-primary round block md">Add to Cart</button>
                                         <button type="button" class="button-warning round block md">Buy Now</button>
-                                    </div>
-
-                                    <div class="d-flex justify-content-between gap-3 mt-2">
-                                        <button type="button" class="button-link-dark round"><span class="material-icons-outlined">favorite_border</span> Add to wishlist</button>
-                                        <button type="button" class="button-link-dark round"><span class="material-icons-outlined">share</span> Share</button>
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-lg-12 col-md-12">
@@ -215,63 +215,127 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-12">
-                    <div class="card">
-                        <div class="body">
-                            <div class="font-size-24 font-weight-600">Product Description</div>
-                            <div class="mt-3">{{ productSingle.description }}</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-12">
-                    <div class="card">
-                        <div class="body">
-                            <div class="font-size-24 font-weight-600">Product Reviews</div>
-                            <div class="background-accent-warning p-4 round mt-3">
-                                <div class="font-size-24 font-weight-500">{{ productSingle.rating.rate }} out of 5</div>
-                                <div class="star-rating star-rating-md py-3">
-                                    <StarRating :ratings="productSingle.rating.rate"></StarRating>
+                <div class="col-xl-7">
+                    <div class="row row-cols-1 g-4">
+                        <div class="col">
+                            <div class="card">
+                                <div class="body">
+                                    <div class="font-size-24 font-weight-600">Product Description</div>
+                                    <div class="mt-3">{{ productSingle.description }}</div>
                                 </div>
-                                <div class="font-size-16">Based on {{ productSingle.rating.count }} reviews</div>
                             </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="body">
+                                    <div class="font-size-24 font-weight-600">Product Reviews</div>
+                                    <div class="background-accent-warning p-4 round mt-3">
+                                        <div class="font-size-24 font-weight-500">{{ productSingle.rating.rate }} out of 5</div>
+                                        <div class="star-rating star-rating-md py-3">
+                                            <StarRating :ratings="productSingle.rating.rate"></StarRating>
+                                        </div>
+                                        <div class="font-size-16">Based on {{ productSingle.rating.count }} reviews</div>
+                                    </div>
 
-                            <div class="review-wrapper">
-                                <div class="review-item" v-for="review in reviews.slice(0, 3)" :key="review.id">
-                                    <div class="d-flex align-items-center gap-2">
-                                        <img src="../assets/placeholders/student.png" class="avatar-circle-sm" alt="">
-                                        <div>
-                                            <div class="font-size-13 font-weight-600">{{ review.email }}</div>
-                                            <div class="star-rating mt-1">
-                                                <StarRating :ratings="productSingle.rating.rate"></StarRating>
+                                    <div class="review-wrapper">
+                                        <div class="review-item" v-for="review in reviews.slice(0, 3)" :key="review.id">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <img src="../assets/placeholders/student.png" class="avatar-circle-sm" alt="">
+                                                <div>
+                                                    <div class="font-size-13 font-weight-600">{{ review.email }}</div>
+                                                    <div class="star-rating mt-1">
+                                                        <StarRating :ratings="productSingle.rating.rate"></StarRating>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="background-accent-medium round p-3 mt-2">
+                                                <div class="font-size-13 mb-1">07 July 2021</div>
+                                                {{ review.body }}
+                                            </div>
+                                            <div class="d-flex justify-content-between gap-3 mt-2">
+                                                <button type="button" class="button-link-dark round"><span class="material-symbols-rounded">thumb_up</span> 2 found this helpful</button>
+                                                <button type="button" class="button-link-dark circle"><span class="material-icons-outlined">more_horiz</span></button>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="background-accent-medium round p-3 mt-2">
-                                        <div class="font-size-13 mb-1">07 July 2021</div>
-                                        {{ review.body }}
-                                    </div>
-                                    <div class="d-flex justify-content-between gap-3 mt-2">
-                                        <button type="button" class="button-link-dark round"><span class="material-symbols-rounded">thumb_up</span> 2 found this helpful</button>
-                                        <button type="button" class="button-link-dark circle"><span class="material-icons-outlined">more_horiz</span></button>
+                                    <div class="mt-2 d-flex justify-content-center">
+                                        <button type="button" class="button-accent-dark text-center round md"><span class="material-icons-outlined">refresh</span> View more</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="mt-2 d-flex justify-content-center">
-                                <button type="button" class="button-accent-dark text-center round md"><span class="material-icons-outlined">refresh</span> View more</button>
-                            </div>
                         </div>
                     </div>
+                </div>
+                <div class="col-xl-5">
+                    <form action="" class="validate-form position-sticky-top top-1">
+                        <div class="row g-3">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="body">
+                                        <div class="font-size-18 font-weight-600">Send your message to this supplier</div>
+                                        <div class="row g-3 mt-2">
+                                            <div class="col-xl-12">
+                                                <div class="d-flex gap-3">
+                                                    <img class="avatar-circle-md" src="../assets/store.png" alt="">
+                                                    <div class="me-auto">
+                                                        <div class="font-size-16 font-weight-600">Ada Si</div>
+                                                        <div class="font-size-14 font-weight-500">Shandong Rippa Machinery Group Co., Ltd.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-xl-12">
+                                                <div class="form">
+                                                    <label for="product" class="form-label"><span class="text-color-danger">*</span> Message</label>
+                                                    <textarea class="form-controlo" cols="30" rows="3" placeholder="Enter your inquiry details such as product name, color, size, MOQ, FOB, etc." required></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12">
+                                                <div class="form">
+                                                    <label for="product" class="form-label"><span class="text-color-danger">*</span> Quantity</label>
+                                                    <div class="d-flex gap-3">
+                                                        <input type="number" class="form-control" placeholder="0" required>
+                                                        <select class="form-control" required>
+                                                            <option value="acres">acres</option>
+                                                            <option value="amperes">amperes</option>
+                                                            <option value="bags">bags</option>
+                                                            <option value="barrels">barrels</option>
+                                                            <option value="blades">blades</option>
+                                                            <option value="boxes">boxes</option>
+                                                            <option value="bushels">bushels</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        I agree to share my Business Card to the supplier.
+                                                    </label>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-xl-12">
+                                                <button type="submit" class="button-primary round md" id="submit-button" disabled>Send inquiry</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="padding-top-4 padding-bottom-3">
-        <div class="container">
+        <div class="container-fluid">
             <div class="d-flex align-items-center justify-content-between">
                 <div class="font-size-26 font-weight-600">Product from the same category</div>
             </div>
-            <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-3 row-cols-2 g-3 mt-2">
+            <div class="row row-cols-xl-6 row-cols-lg-4 row-cols-md-3 row-cols-sm-3 row-cols-2 g-3 mt-2">
                 <div class="col" v-for="product in products" :key="product.id">
                     <div class="card round hover-scale-1 h-100">
                         <router-link :to="{ name: 'ProductSingle', params: { category: product.category, id: product.id } }">

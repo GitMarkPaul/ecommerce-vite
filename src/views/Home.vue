@@ -386,7 +386,7 @@
                                         <img class="card-product-img" loading="lazy" :src="product.image" alt="" />
                                     </router-link>
                                     <div class="body d-grid">
-                                        <div class="badge round background-accent-tertiary sm">{{ product.category }}</div>
+                                        <div class="badge round background-accent-tertiary">{{ product.category }}</div>
                                         <router-link :to="{ name: 'ProductSingle', params: { category: product.category, id: product.id } }" class="font-size-14 font-weight-500 mt-2 text-truncate-2">{{ product.title }}</router-link>
                                         <div class="font-size-16 font-weight-600 text-color-danger mt-2 mb-2">&#8369;{{ product.price }}</div>
                                         <a href="#" class="button-accent-primary round block"><span class="material-icons-outlined">add_shopping_cart</span> Add to Cart</a>
@@ -414,7 +414,7 @@
                         </router-link>
                         <a href="#" class="button-light circle position-absolute top-0 right-0 my-2 mx-2"><span class="material-icons-outlined">favorite_border</span></a>
                         <div class="body d-grid">
-                            <div class="badge round background-accent-tertiary sm">{{ product.category }}</div>
+                            <div class="badge round background-accent-tertiary">{{ product.category }}</div>
                             <router-link :to="{ name: 'ProductSingle', params: { category: product.category, id: product.id } }" class="font-size-14 font-weight-500 mt-2 text-truncate-2">{{ product.title }}</router-link>
                             <div class="font-size-16 font-weight-600 text-color-danger mt-2 mb-2">&#8369;{{ product.price }}</div>
                             <a href="#" class="button-accent-primary round block"><span class="material-icons-outlined">add_shopping_cart</span> Add to Cart</a>

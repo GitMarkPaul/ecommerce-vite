@@ -1,6 +1,10 @@
 // Variables
 $default-border: 1px solid rgba(var(--color-dark-rgb), 0.1) !default;
 $default-transition: all 0.2s ease !default;
+
+.z-index-1 {
+    z-index: 1;
+}
                     
 #app {    
     header { 
@@ -110,7 +114,7 @@ $default-transition: all 0.2s ease !default;
 
 footer {
     background: rgba(var(--color-warning-rgb), 0.1);
-    backdrop-filter: blur(7px);
+    // backdrop-filter: blur(7px);
 
     .footer-menu {
         list-style: none;
@@ -199,4 +203,291 @@ footer {
     }
 }
 
+// FAB
 
+.fab-chat {
+    position: relative;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border: 1px solid rgba(var(--color-dark-rgb), 0.1);
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    transition: all 0.2s ease;
+    background: var(--color-light);
+    user-select: none;
+    max-width: 850px;
+    max-height: 500px;
+    height: 100vh;
+    z-index: 4;
+    margin-right: 5rem;
+    margin-bottom: 3rem;
+    @extend %scale-up-br;
+
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+    
+    span {
+        color: var(--color-primary);
+    }
+    
+    .fab-content {
+        font-size: 16px;
+        font-weight: 500;
+        color:var(--color-medium-contrast);
+    }
+}
+
+// Chat Variables
+$border-color: 1px solid rgba(var(--color-dark-rgb), 0.1);
+
+// Extenders
+%convoWrapperStyles {
+    display: grid;
+    grid-gap: 0.2rem;
+}
+
+%convoStyles {
+    padding: 7px 14px;
+    border-radius: 22px;
+    width: fit-content;
+}
+
+%placeholderStyles {
+    max-width: 75%;
+    height: 2.5rem
+}
+
+.fab-messenger {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        "leftbar content content"
+        "leftbar content content"
+        "leftbar content content";
+    height: 100%;
+    max-width: 1920px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background: var(--color-light);
+
+    @media (max-width: 600px) {
+        grid-template-columns: 0.1fr 1.1fr 1.7fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        grid-template-areas: 
+            "leftbar leftbar leftbar"
+            "leftbar leftbar leftbar"
+            "leftbar leftbar leftbar"; 
+    }
+
+    .leftbar {
+        grid-area: leftbar;
+        overflow: hidden;
+        display: grid; 
+        grid-template-columns: 0.8fr 1.3fr 0.8fr; 
+        grid-template-rows: 0.3fr 2.5fr 0.2fr; 
+        grid-template-areas: 
+            "upper-state upper-state upper-state"
+            "content-state content-state content-state"
+            "content-state content-state content-state";
+    
+        .upper-state {
+            grid-area: upper-state;
+        }
+    
+        .content-state {
+            grid-area: content-state;
+            overflow: auto;
+    
+            .list-group-item {
+                border: none;
+            }
+        }
+    }
+    
+    .content {
+        grid-area: content;
+        overflow: hidden;
+        border-left: $border-color;
+        border-right: $border-color;
+        display: grid; 
+        grid-template-columns: 0.8fr 1.3fr 0.8fr; 
+        grid-template-rows: 0.2fr 2.6fr 0.2fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+            "top-wrapper top-wrapper top-wrapper"
+            "conversation-wrapper conversation-wrapper conversation-wrapper"
+            "bottom-wrapper bottom-wrapper bottom-wrapper";
+    
+        @media (max-width: 600px) {
+            display: none;
+        }
+    
+        .top-wrapper {
+            grid-area: top-wrapper;
+            border-bottom: $border-color;
+            height: 55px;
+        }
+    
+        .bottom-wrapper {
+            grid-area: bottom-wrapper;
+            border-top: $border-color;
+            height: 55px;
+        }
+    
+        .conversation-wrapper {
+            grid-area: conversation-wrapper;
+            overflow: auto;
+    
+            .sender-wrapper {
+                @extend %convoWrapperStyles;
+                place-items: start;
+                width: 100%;
+    
+                .sender {
+                    background: rgba(var(--color-primary-rgb), 0.1);
+                    max-width: 75%;
+                    @extend %convoStyles;
+                }
+    
+                .placeholder {
+                    @extend %placeholderStyles;
+                }
+            }
+            
+            .receiver-wrapper {
+                @extend %convoWrapperStyles;
+                place-items: end;
+                width: 100%;
+    
+                .receiver {
+                    background: var(--color-primary);
+                    color: var(--color-primary-contrast);
+                    max-width: 75%;
+                    @extend %convoStyles;
+                }
+    
+                .placeholder {
+                    @extend %placeholderStyles;
+                }
+            }
+    
+            .empty-state-wrapper {
+                display: grid;
+                place-items: center;
+                align-content: center;
+                text-align: center;
+                height: 100%;
+    
+                .empty-state-icon {
+                    width: 150px;
+                    height: 150px;
+                    background-color: rgba(var(--color-medium-rgb), 0.3);
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 1rem;
+    
+                    i {
+                        font-size: 72px;
+                        color: rgba(var(--color-dark-rgb), 0.6);
+                    }
+                }
+            }
+        }
+    }
+}   
+
+%scale-up-br {
+	-webkit-animation: scale-up-br 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: scale-up-br 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+%scale-out-right {
+	-webkit-animation: scale-out-right 0.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: scale-out-right 0.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-10-3 14:50:27
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-up-br
+ * ----------------------------------------
+ */
+ @-webkit-keyframes scale-up-br {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+    }
+  }
+  @keyframes scale-up-br {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+    }
+  }
+
+/**
+ * ----------------------------------------
+ * animation scale-out-right
+ * ----------------------------------------
+ */
+@-webkit-keyframes scale-out-right {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 100% 50%;
+              transform-origin: 100% 50%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transform-origin: 100% 50%;
+              transform-origin: 100% 50%;
+      opacity: 1;
+    }
+  }
+  @keyframes scale-out-right {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 100% 50%;
+              transform-origin: 100% 50%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transform-origin: 100% 50%;
+              transform-origin: 100% 50%;
+      opacity: 1;
+    }
+  }
+  
+  

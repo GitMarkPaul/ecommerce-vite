@@ -21,14 +21,14 @@
 						<div class="col-xl-12">
 							<div class="font-size-16 font-weight-500">Top product searches:</div>
 							<div class="search-wrapper">
-								<a href="#" class="search-link">Face Mask</a>
-								<a href="#" class="search-link">Aquaflask</a>
-								<a href="#" class="search-link">Bag</a>
-								<a href="#" class="search-link">Sandals for Women</a>
-								<a href="#" class="search-link">Dress</a>
-								<a href="#" class="search-link">Tumbler</a>
-								<a href="#" class="search-link">Shoes for Men</a>
-								<a href="#" class="search-link">Lunch Box</a>
+								<router-link :to="{ name: 'SearchResults' }" class="search-link">Face Mask</router-link>
+								<router-link :to="{ name: 'SearchResults' }" class="search-link">Aquaflask</router-link>
+								<router-link :to="{ name: 'SearchResults' }" class="search-link">Bag</router-link>
+								<router-link :to="{ name: 'SearchResults' }" class="search-link">Sandals for Women</router-link>
+								<router-link :to="{ name: 'SearchResults' }" class="search-link">Dress</router-link>
+								<router-link :to="{ name: 'SearchResults' }" class="search-link">Tumbler</router-link>
+								<router-link :to="{ name: 'SearchResults' }" class="search-link">Shoes for Men</router-link>
+								<router-link :to="{ name: 'SearchResults' }" class="search-link">Lunch Box</router-link>
 							</div>
 						</div>
 					</div>

@@ -40,38 +40,44 @@
                         </div>
                         <div class="content-state list-group">
 
-                            <a href="javascript:void(0);" class="list-group-item px-3 py-2" aria-hidden="true">
-                                <div class="d-flex w-100 align-items-center gap-3">
-                                    <div class="position-relative placeholder-glow">
-                                        <div class="avatar-circle-sm placeholder"></div>
-                                    </div>
-                                    <div class="display-grid gap-2 placeholder-glow w-100">
-                                        <div class="placeholder col-7"></div>
-                                        <div class="placeholder col-12"></div>
-                                    </div>
-                                </div>
-                            </a>
-                            <template v-for="chat in chats">
-                                <a href="#" class="list-group-item list-group-item-action px-3 py-2">
-                                    <div class="d-flex w-100 align-items-center gap-3">
-                                        <div class="position-relative">
-                                            <img src="../assets/users/avatar.jpg" class="avatar-circle-sm" alt="">
+                            <Suspense>
+                                <template #default>
+                                    <template v-for="chat in chats">
+                                        <a href="#" class="list-group-item list-group-item-action px-3 py-2">
+                                            <div class="d-flex w-100 align-items-center gap-3">
+                                                <div class="position-relative">
+                                                    <img src="../assets/users/avatar.jpg" class="avatar-circle-sm" alt="">
+                                                </div>
+                                                <div class="display-grid">
+                                                    <div class="font-size-14 font-weight-600">{{ chat.user.username }}</div>
+                                                    <div class="font-size-13 d-flex gap-2">{{ chat.body }}</div>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="new-message-indicator"></div> -->
+                                        </a>
+                                    </template>
+                                </template>
+                                <template #fallback>
+                                    <a href="javascript:void(0);" class="list-group-item px-3 py-2" aria-hidden="true" v-for="n in 12">
+                                        <div class="d-flex w-100 align-items-center gap-3">
+                                            <div class="position-relative placeholder-glow">
+                                                <div class="avatar-circle-sm placeholder"></div>
+                                            </div>
+                                            <div class="display-grid gap-2 placeholder-glow w-100">
+                                                <div class="placeholder col-7"></div>
+                                                <div class="placeholder col-12"></div>
+                                            </div>
                                         </div>
-                                        <div class="display-grid">
-                                            <div class="font-size-15 font-weight-600">{{ chat.user.username }}</div>
-                                            <div class="font-size-13 d-flex gap-2">{{ chat.body }}<div class="font-weight-600">2:30pm</div></div>
-                                        </div>
-                                    </div>
-                                    <!-- <div class="new-message-indicator"></div> -->
-                                </a>
-                            </template>
+                                    </a>
+                                </template>
+                            </Suspense>
                         </div>
                     </div>
                     <div class="content">
                         <div class="top-wrapper sticky-top p-3 d-flex align-items-center justify-content-between">
                             <div class="d-flex align-items-center gap-2">
                                 <img src="../assets/users/avatar.jpg" class="avatar-circle-xs" alt="">
-                                <div class="font-size-16 font-weight-600">Rose Jovovich</div>
+                                <div class="font-size-14 font-weight-600">Rose Jovovich</div>
                             </div>
                             <div>
                                 <button type="button" class="button-link-dark circle"><span class="material-icons-outlined">report</span></button>
@@ -81,17 +87,17 @@
 
                         <div class="conversation-wrapper p-4">
                             <!-- Empty State -->
-                            <div class="empty-state-wrapper d-none">
+                            <div class="empty-state-wrapper">
                                 <div class="empty-state-icon">
                                     <i class="bx bxs-message-square-dots"></i>
                                 </div>
-                                <div class="font-size-18 font-weight-600">It's nice to chat with someone</div>
-                                <p>Pick a person from left menu and start conversation</p>
+                                <div class="font-size-16 font-weight-600">Rose Jovovich</div>
+                                <p class="font-size-14">Shandong Rippa Machinery Group Co., Ltd.</p>
                             </div>
                             <!-- End: Empty State -->
 
                             <!-- Placeholder Loader -->
-                            <div class="sender-wrapper placeholder-glow">
+                            <!-- <div class="sender-wrapper placeholder-glow">
                                 <div class="placeholder col-2"></div>
                                 <div class="placeholder col-5"></div>
                                 <div class="placeholder col-4"></div>
@@ -106,11 +112,11 @@
                                 <div class="placeholder col-4"></div>
                                 <div class="placeholder col-5"></div>
                                 <div class="placeholder col-6"></div>
-                            </div>
+                            </div> -->
                             <!-- End: Placeholder Loader -->
 
                             <!-- Conversation Bubbles -->
-                            <div class="sender-wrapper">
+                            <!-- <div class="sender-wrapper">
                                 <div class="sender">Hello</div>
                                 <div class="sender">What is project proposal?</div>
                             </div>
@@ -130,7 +136,7 @@
                                 <div class="receiver">By the way we will have a meeting with client tomorrow</div>
                                 <div class="receiver">You can join the meeting</div>
                                 <div class="receiver">Thanks</div>
-                            </div>
+                            </div> -->
                             <!-- End: Conversation Bubbles -->
                         </div>
                         <div class="bottom-wrapper sticky-bottom p-2">

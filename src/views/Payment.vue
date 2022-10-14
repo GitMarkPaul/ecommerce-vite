@@ -102,7 +102,7 @@
                             
                             <div class="d-grid gap-2">
                                 <div class="border background-color-light py-2 px-2 rounded-4 hover-scale-1 d-flex align-items-center gap-3 position-relative">
-                                    <div class="initial-circle-md round">
+                                    <div class="initial-circle-md round p-3">
                                         <span class="material-icons-outlined">local_shipping</span>
                                     </div>
                                     <div>
@@ -114,7 +114,7 @@
                                     </div>
                                 </div>
                                 <div class="border background-color-light py-2 px-2 rounded-4 hover-scale-1 d-flex align-items-center gap-3" data-bs-toggle="modal" data-bs-target="#debitCreditModal">
-                                    <div class="initial-circle-md round">
+                                    <div class="initial-circle-md round p-3">
                                         <span class="material-icons-outlined">credit_card</span>
                                     </div>
                                     <div>
@@ -123,7 +123,7 @@
                                     </div>
                                 </div>
                                 <div class="border background-color-light py-2 px-2 rounded-4 hover-scale-1 d-flex align-items-center gap-3">
-                                    <div class="initial-circle-md round">
+                                    <div class="initial-circle-md round p-3">
                                         <i class="bx bxl-paypal"></i>
                                     </div>
                                     <div>
@@ -132,7 +132,7 @@
                                     </div>
                                 </div>
                                 <div class="border background-color-light py-2 px-2 rounded-4 hover-scale-1 d-flex align-items-center gap-3" data-bs-toggle="modal" data-bs-target="#audaPayModal">
-                                    <div class="initial-circle-md round">
+                                    <div class="initial-circle-md round p-3">
                                         <span class="material-icons-outlined">token</span>
                                     </div>
                                     <div>

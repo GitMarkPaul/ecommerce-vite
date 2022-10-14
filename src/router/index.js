@@ -22,6 +22,14 @@ const routes = [
         }
     },
     {
+        path: '/search',
+        name: 'SearchResults',
+        component: loadComponent('SearchResults'),
+        meta: {
+            title: 'Search - Auda Philippines: Online Shopping'
+        }
+    },
+    {
         path: '/settings',
         name: 'Settings',
         component: loadComponent('Settings'),

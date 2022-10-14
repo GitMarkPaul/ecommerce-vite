@@ -1,8 +1,8 @@
 <template>
-    <section class="padding-top-3 padding-bottom-3">
-        <div class="container">
-            <div class="row align-items-center justify-content-center g-5">
-                <div class="col-xl-5 col-lg-5 col-md-5">
+    <section class="padding-top-3 padding-bottom-3 login-bg">
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-xl-end justify-content-lg-end justify-content-sm-center g-5">
+                <div class="col-xl-4 col-lg-5 col-md-6">
                     <div class="card">
                         <div class="body">
                             <div class="font-size-24 font-weight-600">Login to your Auda account</div>
@@ -32,20 +32,22 @@
                                     </form>
                                 </div>
                                 <div class="col-xl-12">
-                                    <router-link :to="{ name: 'Register' }" class="button-link-dark md block round">Don't have an account yet? Register</router-link>
+                                    <router-link :to="{ name: 'Register' }" class="button-link-dark block round">Don't have an account yet? Register</router-link>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="font-size-14 font-weight-500 text-center py-2">Or, login with</div>
+                                    <div class="d-flex gap-2 mt-2">
+                                        <div class="d-flex align-items-center gap-3 border round py-2 px-2 block hover-scale-1 font-weight-500 background-color-light">
+                                            <div class="initial-circle-sm"><span class="bx bxl-facebook-circle"></span></div>
+                                            facebook
+                                        </div>
+                                        <div class="d-flex align-items-center gap-3 border round py-2 px-2 block hover-scale-1 font-weight-500 background-color-light">
+                                            <div class="initial-circle-sm"><span class="bx bxl-google"></span></div>
+                                            Google
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="font-size-14 font-weight-500 text-center py-3">Or, login with</div>
-                    <div class="d-flex gap-2 mt-3">
-                        <div class="d-flex align-items-center gap-3 border round py-2 px-2 block hover-scale-1 font-weight-500 background-color-light">
-                            <div class="initial-circle-sm"><span class="bx bxl-facebook-circle"></span></div>
-                            facebook
-                        </div>
-                        <div class="d-flex align-items-center gap-3 border round py-2 px-2 block hover-scale-1 font-weight-500 background-color-light">
-                            <div class="initial-circle-sm"><span class="bx bxl-google"></span></div>
-                            Google
                         </div>
                     </div>
                 </div>
@@ -53,3 +55,11 @@
         </div>
     </section>
 </template>
+
+<style lang="scss">
+    .login-bg {
+        background-image: url('../assets/login-bg.png'); 
+        background-size: cover;
+        background-position: center;
+    }
+</style>
